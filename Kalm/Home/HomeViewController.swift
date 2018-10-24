@@ -116,7 +116,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @objc func graphButtonPressed() {
-        performSegue(withIdentifier: "homeToGraph", sender: self)
+        performSegue(withIdentifier: "homeToHistory", sender: self)
+//        performSegue(withIdentifier: "homeToGraph", sender: self)
     }
     
     @IBAction func leftChangeDurationButtonPressed() {

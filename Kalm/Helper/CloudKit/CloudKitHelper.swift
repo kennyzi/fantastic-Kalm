@@ -10,6 +10,9 @@ import Foundation
 import CloudKit
 
 class CloudKitHelper {
+    
+    var sessions : [Session] = []
+    
     func createNewSession (session : Session) {
         let sessionRecord = CKRecord(recordType: "Session")
         
@@ -25,7 +28,7 @@ class CloudKitHelper {
         
         database.save(record) { (record, error) in
             if let errorUnwrapped = error{
-                print("Error : \(errorUnwrapped.localizedDescription)")
+                print("Error Save : \(errorUnwrapped.localizedDescription)")
             }
         }
     }
@@ -42,18 +45,20 @@ class CloudKitHelper {
         
         database.perform(query, inZoneWith: nil) { (records, error) in
             if let errorUnwrapped = error{
-                print("Error : \(errorUnwrapped)")
+                print("Error Fetch : \(errorUnwrapped)")
             }
             if let recordsUnwrapped = records{
-                recordsUnwrapped.forEach({ (record) in
-                    let session = self.decodeRecordtoSession(record: record)
-                    guard let sessionUnwrapped = session else {return}
-                    result.append(sessionUnwrapped)
-                })
+                DispatchQueue.global().sync {
+                    recordsUnwrapped.forEach({ (record) in
+                        let session = self.decodeRecordtoSession(record: record)
+                        guard let sessionUnwrapped = session else {return}
+                        result.append(sessionUnwrapped)
+                    })
+                }
             }
-            
+            self.sessions = result
+            print(self.sessions)
         }
-        
         return result
     }
     
@@ -61,10 +66,10 @@ class CloudKitHelper {
         let startDate = record["startDate"] as? Date
         let endDate = record["endDate"] as? Date
         
-        if let startDate = startDate, let endDate = endDate {
-            let session = Session.init(startDate: startDate, endDate: endDate)
-            return session
-        }
-        return nil
+        guard let startDateUnwrapped = startDate else{return nil}
+        guard let endDateUnwrapped = endDate else{return nil}
+        
+        let session = Session(startDate: startDateUnwrapped, endDate: endDateUnwrapped)
+        return session
     }
 }

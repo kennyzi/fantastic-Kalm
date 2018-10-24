@@ -27,6 +27,7 @@ class DoneBreathingViewController: UIViewController {
         //take a note time End
         
         timeEnd = Date()
+        saveSession()
         
         //update Label in Storyboard
         if time > 59 {
@@ -56,6 +57,13 @@ class DoneBreathingViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    func saveSession(){
+        if let startDate = timeStart, let endDate = timeEnd{
+            let session = Session(startDate: startDate, endDate: endDate)
+            CloudKitHelper().createNewSession(session: session)
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
@@ -63,6 +71,7 @@ class DoneBreathingViewController: UIViewController {
     
     // MARK: - Button Delegate
     @IBAction func backToMainMenuButtonPressed() {
+        
         performSegue(withIdentifier: "doneBreathingToHome", sender: self)
     }
 }

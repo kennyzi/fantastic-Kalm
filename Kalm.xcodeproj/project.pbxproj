@@ -13,7 +13,10 @@
 		110961C220C4CA520040CD4B /* KalmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961C120C4CA520040CD4B /* KalmUITests.swift */; };
 		265ECF4DA1F5EF792CE6B58F /* Pods_KalmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */; };
 		6647169B21805B2300D8154B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6647169A21805B2300D8154B /* Session.swift */; };
+		66549D102180743800FAA423 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D0F2180743800FAA423 /* HistoryViewController.swift */; };
+		66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */; };
 		66FA1275218060DE0003A492 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA1274218060DE0003A492 /* CloudKitHelper.swift */; };
+		66FA127B218070B40003A492 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA127A218070B40003A492 /* CloudKit.framework */; };
 		694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */; };
 		8B50A2779007847C434A0D35 /* Pods_KalmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */; };
 		BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5999C720C8C5A5003D1830 /* GraphViewController.swift */; };
@@ -136,8 +139,12 @@
 		4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.debug.xcconfig"; sourceTree = "<group>"; };
 		59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.release.xcconfig"; sourceTree = "<group>"; };
 		6647169A21805B2300D8154B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		66549D0F2180743800FAA423 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		66FA1274218060DE0003A492 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		66FA127621806BF50003A492 /* KalmWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KalmWatch Extension.entitlements"; sourceTree = "<group>"; };
+		66FA1279218070B00003A492 /* Kalm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kalm.entitlements; sourceTree = "<group>"; };
+		66FA127A218070B40003A492 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5999C720C8C5A5003D1830 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		BA5999D420C8E057003D1830 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
@@ -194,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */,
+				66FA127B218070B40003A492 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +260,7 @@
 		110961A020C4CA500040CD4B /* Kalm */ = {
 			isa = PBXGroup;
 			children = (
+				66FA1279218070B00003A492 /* Kalm.entitlements */,
 				1111713F20DBAEE5003065AF /* Helper */,
 				BA4DB09B20DCCF12004199AB /* Graph */,
 				BA4DB09A20DCCF06004199AB /* Info */,
@@ -328,6 +337,7 @@
 		1E23B7F02A89834CAC25991A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66FA127A218070B40003A492 /* CloudKit.framework */,
 				44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */,
 				EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */,
 				985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */,
@@ -376,7 +386,9 @@
 		BA4DB09B20DCCF12004199AB /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				66549D0F2180743800FAA423 /* HistoryViewController.swift */,
 				BA5999C720C8C5A5003D1830 /* GraphViewController.swift */,
+				66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -556,6 +568,14 @@
 				TargetAttributes = {
 					1109619D20C4CA500040CD4B = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					110961B120C4CA520040CD4B = {
 						CreatedOnToolsVersion = 9.3;
@@ -571,8 +591,11 @@
 					BAD09C5020E2513B0066BD89 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
-							com.apple.iCloud = {
+							com.apple.Push = {
 								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
 							};
 						};
 					};
@@ -745,6 +768,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */,
 				BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */,
 				110961A220C4CA500040CD4B /* AppDelegate.swift in Sources */,
 				BADBD93520C7786200AFD9D2 /* BreathingViewController.swift in Sources */,
@@ -760,6 +784,7 @@
 				BAD09C7820E2B4990066BD89 /* InfoViewController.swift in Sources */,
 				BAD09C4120E242760066BD89 /* ChartColors.swift in Sources */,
 				66FA1275218060DE0003A492 /* CloudKitHelper.swift in Sources */,
+				66549D102180743800FAA423 /* HistoryViewController.swift in Sources */,
 				BA5999D620C8E057003D1830 /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,8 +987,9 @@
 			baseConfigurationReference = 4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kalm/Kalm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				INFOPLIST_FILE = Kalm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -982,8 +1008,9 @@
 			baseConfigurationReference = 59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kalm/Kalm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				INFOPLIST_FILE = Kalm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
