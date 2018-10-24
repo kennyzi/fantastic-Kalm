@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class BreathingViewController: UIViewController {
 
     // MARK: - Outlets
@@ -24,6 +24,7 @@ class BreathingViewController: UIViewController {
     var time = 0
     var timer = Timer()
     var timer2 = Timer()
+    var player: AVAudioPlayer?
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -35,6 +36,8 @@ class BreathingViewController: UIViewController {
         
         innerCircle.layer.zPosition = .greatestFiniteMagnitude
         self.navigationController?.isNavigationBarHidden = true
+        
+        playBackGroundMusic()
         super.viewDidLoad()
     }
     
@@ -121,6 +124,23 @@ class BreathingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DoneBreathingViewController{
             destination.time = time
+        }
+    }
+    func playBackGroundMusic(){
+        guard let url = Bundle.main.url(forResource: "AmbientSound", withExtension: "m4a") else {return}
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            guard let player = player else {return}
+            
+            player.play()
+            player.numberOfLoops = -1
+            
+        } catch  {
+            print(error.localizedDescription)
         }
     }
 }
