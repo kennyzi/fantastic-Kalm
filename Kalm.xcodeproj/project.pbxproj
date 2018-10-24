@@ -137,6 +137,7 @@
 		59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.release.xcconfig"; sourceTree = "<group>"; };
 		6647169A21805B2300D8154B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		66FA1274218060DE0003A492 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		66FA127621806BF50003A492 /* KalmWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KalmWatch Extension.entitlements"; sourceTree = "<group>"; };
 		985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5999C720C8C5A5003D1830 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		BA5999D420C8E057003D1830 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
@@ -403,6 +404,7 @@
 		BAD09C5520E2513C0066BD89 /* KalmWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				66FA127621806BF50003A492 /* KalmWatch Extension.entitlements */,
 				BAD09C5620E2513C0066BD89 /* InterfaceController.swift */,
 				BAD09C5820E2513C0066BD89 /* ExtensionDelegate.swift */,
 				BAD09C5A20E2513C0066BD89 /* NotificationController.swift */,
@@ -568,6 +570,11 @@
 					};
 					BAD09C5020E2513B0066BD89 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1118,6 +1125,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "KalmWatch Extension/KalmWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				INFOPLIST_FILE = "KalmWatch Extension/Info.plist";
@@ -1140,6 +1148,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "KalmWatch Extension/KalmWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				INFOPLIST_FILE = "KalmWatch Extension/Info.plist";
