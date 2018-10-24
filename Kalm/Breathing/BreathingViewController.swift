@@ -119,6 +119,11 @@ class BreathingViewController: UIViewController {
     // MARK: - Button Delegate
     @IBAction func stopButtonPressed() {
         performSegue(withIdentifier: "breathingToDoneBreathing", sender: self)
+        do {
+            player?.stop()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     // MARK: - Segue
