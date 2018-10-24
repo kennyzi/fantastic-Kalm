@@ -1,0 +1,1189 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110961A220C4CA500040CD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961A120C4CA500040CD4B /* AppDelegate.swift */; };
+		110961A720C4CA500040CD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110961A520C4CA500040CD4B /* Main.storyboard */; };
+		110961B720C4CA520040CD4B /* KalmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961B620C4CA520040CD4B /* KalmTests.swift */; };
+		110961C220C4CA520040CD4B /* KalmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961C120C4CA520040CD4B /* KalmUITests.swift */; };
+		265ECF4DA1F5EF792CE6B58F /* Pods_KalmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */; };
+		694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */; };
+		8B50A2779007847C434A0D35 /* Pods_KalmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */; };
+		BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5999C720C8C5A5003D1830 /* GraphViewController.swift */; };
+		BA5999D620C8E057003D1830 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5999D420C8E057003D1830 /* PageCell.swift */; };
+		BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5999D520C8E057003D1830 /* SwipeController.swift */; };
+		BA94143520C7DEB400BA7D54 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142320C7DEA400BA7D54 /* RobotoCondensed-Bold.ttf */; };
+		BA94143620C7DEB400BA7D54 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142420C7DEA500BA7D54 /* Roboto-ThinItalic.ttf */; };
+		BA94143720C7DEB400BA7D54 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142520C7DEA600BA7D54 /* RobotoCondensed-Regular.ttf */; };
+		BA94143820C7DEB400BA7D54 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142620C7DEA700BA7D54 /* RobotoCondensed-Italic.ttf */; };
+		BA94143920C7DEB400BA7D54 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142720C7DEA800BA7D54 /* Roboto-Thin.ttf */; };
+		BA94143A20C7DEB400BA7D54 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142820C7DEA900BA7D54 /* Roboto-BlackItalic.ttf */; };
+		BA94143B20C7DEB400BA7D54 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142920C7DEA900BA7D54 /* Roboto-Regular.ttf */; };
+		BA94143C20C7DEB400BA7D54 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142A20C7DEAA00BA7D54 /* Roboto-LightItalic.ttf */; };
+		BA94143D20C7DEB400BA7D54 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142B20C7DEAB00BA7D54 /* Roboto-MediumItalic.ttf */; };
+		BA94143E20C7DEB400BA7D54 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142C20C7DEAC00BA7D54 /* Roboto-Black.ttf */; };
+		BA94143F20C7DEB400BA7D54 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142D20C7DEAD00BA7D54 /* Roboto-Medium.ttf */; };
+		BA94144020C7DEB400BA7D54 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142E20C7DEAE00BA7D54 /* Roboto-BoldItalic.ttf */; };
+		BA94144120C7DEB400BA7D54 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94142F20C7DEAF00BA7D54 /* Roboto-Italic.ttf */; };
+		BA94144220C7DEB400BA7D54 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94143020C7DEB000BA7D54 /* Roboto-Bold.ttf */; };
+		BA94144320C7DEB400BA7D54 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94143120C7DEB100BA7D54 /* RobotoCondensed-BoldItalic.ttf */; };
+		BA94144420C7DEB400BA7D54 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94143220C7DEB200BA7D54 /* RobotoCondensed-Light.ttf */; };
+		BA94144520C7DEB400BA7D54 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94143320C7DEB300BA7D54 /* RobotoCondensed-LightItalic.ttf */; };
+		BA94144620C7DEB400BA7D54 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA94143420C7DEB400BA7D54 /* Roboto-Light.ttf */; };
+		BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C3D20E242760066BD89 /* ChartSeries.swift */; };
+		BAD09C4120E242760066BD89 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C3E20E242760066BD89 /* ChartColors.swift */; };
+		BAD09C4220E242760066BD89 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C3F20E242760066BD89 /* Chart.swift */; };
+		BAD09C4920E2513A0066BD89 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD09C4720E2513A0066BD89 /* Interface.storyboard */; };
+		BAD09C4B20E2513B0066BD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD09C4A20E2513B0066BD89 /* Assets.xcassets */; };
+		BAD09C5220E2513C0066BD89 /* KalmWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAD09C5720E2513C0066BD89 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C5620E2513C0066BD89 /* InterfaceController.swift */; };
+		BAD09C5920E2513C0066BD89 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C5820E2513C0066BD89 /* ExtensionDelegate.swift */; };
+		BAD09C5B20E2513C0066BD89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C5A20E2513C0066BD89 /* NotificationController.swift */; };
+		BAD09C5D20E2513C0066BD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD09C5C20E2513C0066BD89 /* Assets.xcassets */; };
+		BAD09C6220E2513C0066BD89 /* KalmWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BAD09C4520E2513A0066BD89 /* KalmWatch.app */; };
+		BAD09C7820E2B4990066BD89 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C7720E2B4980066BD89 /* InfoViewController.swift */; };
+		BAD09C7B20E2B78B0066BD89 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C7920E2B78B0066BD89 /* ExpandableHeaderView.swift */; };
+		BAD09C7C20E2B78B0066BD89 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD09C7A20E2B78B0066BD89 /* Section.swift */; };
+		BADBD93320C76A4E00AFD9D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADBD93220C76A4E00AFD9D2 /* HomeViewController.swift */; };
+		BADBD93520C7786200AFD9D2 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADBD93420C7786200AFD9D2 /* BreathingViewController.swift */; };
+		BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADBD93620C77B3200AFD9D2 /* DoneBreathingViewController.swift */; };
+		BAF4325920C8E74300521B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325820C8E74200521B56 /* Assets.xcassets */; };
+		BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */; };
+		BAF4325E20C8ED5D00521B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		110961B320C4CA520040CD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1109619D20C4CA500040CD4B;
+			remoteInfo = Kalm;
+		};
+		110961BE20C4CA520040CD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1109619D20C4CA500040CD4B;
+			remoteInfo = Kalm;
+		};
+		BAD09C5320E2513C0066BD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD09C5020E2513B0066BD89;
+			remoteInfo = "KalmWatch Extension";
+		};
+		BAD09C6020E2513C0066BD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD09C4420E2513A0066BD89;
+			remoteInfo = KalmWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAD09C6820E2513C0066BD89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAD09C5220E2513C0066BD89 /* KalmWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD09C6A20E2513C0066BD89 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BAD09C6220E2513C0066BD89 /* KalmWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1109619E20C4CA500040CD4B /* Kalm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kalm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		110961A120C4CA500040CD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		110961A620C4CA500040CD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		110961AD20C4CA510040CD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110961B220C4CA520040CD4B /* KalmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		110961B620C4CA520040CD4B /* KalmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalmTests.swift; sourceTree = "<group>"; };
+		110961B820C4CA520040CD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110961BD20C4CA520040CD4B /* KalmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		110961C120C4CA520040CD4B /* KalmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalmUITests.swift; sourceTree = "<group>"; };
+		110961C320C4CA520040CD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14EB988EDC4621E664FE7022 /* Pods-KalmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmUITests/Pods-KalmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D409F068DCAAD2420918C07 /* Pods-KalmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2917846DDD8840DE2D5CED42 /* Pods-KalmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KalmUITests/Pods-KalmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kalm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.debug.xcconfig"; sourceTree = "<group>"; };
+		59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.release.xcconfig"; sourceTree = "<group>"; };
+		985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5999C720C8C5A5003D1830 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		BA5999D420C8E057003D1830 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		BA5999D520C8E057003D1830 /* SwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeController.swift; sourceTree = "<group>"; };
+		BA94142320C7DEA400BA7D54 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		BA94142420C7DEA500BA7D54 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BA94142520C7DEA600BA7D54 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		BA94142620C7DEA700BA7D54 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		BA94142720C7DEA800BA7D54 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		BA94142820C7DEA900BA7D54 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BA94142920C7DEA900BA7D54 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BA94142A20C7DEAA00BA7D54 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		BA94142B20C7DEAB00BA7D54 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BA94142C20C7DEAC00BA7D54 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		BA94142D20C7DEAD00BA7D54 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		BA94142E20C7DEAE00BA7D54 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BA94142F20C7DEAF00BA7D54 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		BA94143020C7DEB000BA7D54 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		BA94143120C7DEB100BA7D54 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BA94143220C7DEB200BA7D54 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		BA94143320C7DEB300BA7D54 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		BA94143420C7DEB400BA7D54 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		BAD09C3D20E242760066BD89 /* ChartSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
+		BAD09C3E20E242760066BD89 /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
+		BAD09C3F20E242760066BD89 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		BAD09C4520E2513A0066BD89 /* KalmWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalmWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD09C4820E2513A0066BD89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BAD09C4A20E2513B0066BD89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD09C4C20E2513B0066BD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KalmWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD09C5620E2513C0066BD89 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BAD09C5820E2513C0066BD89 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BAD09C5A20E2513C0066BD89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BAD09C5C20E2513C0066BD89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD09C5E20E2513C0066BD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD09C5F20E2513C0066BD89 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BAD09C7720E2B4980066BD89 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		BAD09C7920E2B78B0066BD89 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		BAD09C7A20E2B78B0066BD89 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		BADBD93220C76A4E00AFD9D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BADBD93420C7786200AFD9D2 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
+		BADBD93620C77B3200AFD9D2 /* DoneBreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneBreathingViewController.swift; sourceTree = "<group>"; };
+		BAF4325820C8E74200521B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreenViewController.swift; sourceTree = "<group>"; };
+		BAF4325D20C8ED5D00521B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
+		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1109619B20C4CA500040CD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961AF20C4CA520040CD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B50A2779007847C434A0D35 /* Pods_KalmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961BA20C4CA520040CD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265ECF4DA1F5EF792CE6B58F /* Pods_KalmUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD09C4E20E2513B0066BD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1109619520C4CA500040CD4B = {
+			isa = PBXGroup;
+			children = (
+				110961A020C4CA500040CD4B /* Kalm */,
+				BAD09C4620E2513A0066BD89 /* KalmWatch */,
+				BAD09C5520E2513C0066BD89 /* KalmWatch Extension */,
+				110961B520C4CA520040CD4B /* KalmTests */,
+				110961C020C4CA520040CD4B /* KalmUITests */,
+				1109619F20C4CA500040CD4B /* Products */,
+				97F99EFE2C689ED0C9A834CA /* Pods */,
+				1E23B7F02A89834CAC25991A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1109619F20C4CA500040CD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1109619E20C4CA500040CD4B /* Kalm.app */,
+				110961B220C4CA520040CD4B /* KalmTests.xctest */,
+				110961BD20C4CA520040CD4B /* KalmUITests.xctest */,
+				BAD09C4520E2513A0066BD89 /* KalmWatch.app */,
+				BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		110961A020C4CA500040CD4B /* Kalm */ = {
+			isa = PBXGroup;
+			children = (
+				1111713F20DBAEE5003065AF /* Helper */,
+				BA4DB09B20DCCF12004199AB /* Graph */,
+				BA4DB09A20DCCF06004199AB /* Info */,
+				BA4DB09920DCCDF0004199AB /* Introduction */,
+				1111714120DBAF0A003065AF /* Breathing */,
+				1111713E20DBAEC4003065AF /* Home */,
+				110961A520C4CA500040CD4B /* Main.storyboard */,
+				BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */,
+				110961A120C4CA500040CD4B /* AppDelegate.swift */,
+				110961AD20C4CA510040CD4B /* Info.plist */,
+				BAF4325820C8E74200521B56 /* Assets.xcassets */,
+			);
+			path = Kalm;
+			sourceTree = "<group>";
+		};
+		110961B520C4CA520040CD4B /* KalmTests */ = {
+			isa = PBXGroup;
+			children = (
+				110961B620C4CA520040CD4B /* KalmTests.swift */,
+				110961B820C4CA520040CD4B /* Info.plist */,
+			);
+			path = KalmTests;
+			sourceTree = "<group>";
+		};
+		110961C020C4CA520040CD4B /* KalmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				110961C120C4CA520040CD4B /* KalmUITests.swift */,
+				110961C320C4CA520040CD4B /* Info.plist */,
+			);
+			path = KalmUITests;
+			sourceTree = "<group>";
+		};
+		1111713E20DBAEC4003065AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BADBD93220C76A4E00AFD9D2 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1111713F20DBAEE5003065AF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C3C20E242540066BD89 /* Chart */,
+				BAF4325720C8E14400521B56 /* Fonts */,
+				1111714020DBAEF5003065AF /* Model */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1111714020DBAEF5003065AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C7920E2B78B0066BD89 /* ExpandableHeaderView.swift */,
+				BAD09C7A20E2B78B0066BD89 /* Section.swift */,
+				BA5999D420C8E057003D1830 /* PageCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1111714120DBAF0A003065AF /* Breathing */ = {
+			isa = PBXGroup;
+			children = (
+				BADBD93420C7786200AFD9D2 /* BreathingViewController.swift */,
+				BADBD93620C77B3200AFD9D2 /* DoneBreathingViewController.swift */,
+			);
+			path = Breathing;
+			sourceTree = "<group>";
+		};
+		1E23B7F02A89834CAC25991A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */,
+				EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */,
+				985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97F99EFE2C689ED0C9A834CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */,
+				59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */,
+				1D409F068DCAAD2420918C07 /* Pods-KalmTests.debug.xcconfig */,
+				BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */,
+				2917846DDD8840DE2D5CED42 /* Pods-KalmUITests.debug.xcconfig */,
+				14EB988EDC4621E664FE7022 /* Pods-KalmUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA4DB09920DCCDF0004199AB /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */,
+				BA5999D520C8E057003D1830 /* SwipeController.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		BA4DB09A20DCCF06004199AB /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C7720E2B4980066BD89 /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		BA4DB09B20DCCF12004199AB /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				BA5999C720C8C5A5003D1830 /* GraphViewController.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		BAD09C3C20E242540066BD89 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C3F20E242760066BD89 /* Chart.swift */,
+				BAD09C3E20E242760066BD89 /* ChartColors.swift */,
+				BAD09C3D20E242760066BD89 /* ChartSeries.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		BAD09C4620E2513A0066BD89 /* KalmWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C4720E2513A0066BD89 /* Interface.storyboard */,
+				BAD09C4A20E2513B0066BD89 /* Assets.xcassets */,
+				BAD09C4C20E2513B0066BD89 /* Info.plist */,
+			);
+			path = KalmWatch;
+			sourceTree = "<group>";
+		};
+		BAD09C5520E2513C0066BD89 /* KalmWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAD09C5620E2513C0066BD89 /* InterfaceController.swift */,
+				BAD09C5820E2513C0066BD89 /* ExtensionDelegate.swift */,
+				BAD09C5A20E2513C0066BD89 /* NotificationController.swift */,
+				BAD09C5C20E2513C0066BD89 /* Assets.xcassets */,
+				BAD09C5E20E2513C0066BD89 /* Info.plist */,
+				BAD09C5F20E2513C0066BD89 /* PushNotificationPayload.apns */,
+			);
+			path = "KalmWatch Extension";
+			sourceTree = "<group>";
+		};
+		BAF4325720C8E14400521B56 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA94142C20C7DEAC00BA7D54 /* Roboto-Black.ttf */,
+				BA94142820C7DEA900BA7D54 /* Roboto-BlackItalic.ttf */,
+				BA94143020C7DEB000BA7D54 /* Roboto-Bold.ttf */,
+				BA94142E20C7DEAE00BA7D54 /* Roboto-BoldItalic.ttf */,
+				BA94142F20C7DEAF00BA7D54 /* Roboto-Italic.ttf */,
+				BA94143420C7DEB400BA7D54 /* Roboto-Light.ttf */,
+				BA94142A20C7DEAA00BA7D54 /* Roboto-LightItalic.ttf */,
+				BA94142D20C7DEAD00BA7D54 /* Roboto-Medium.ttf */,
+				BA94142B20C7DEAB00BA7D54 /* Roboto-MediumItalic.ttf */,
+				BA94142920C7DEA900BA7D54 /* Roboto-Regular.ttf */,
+				BA94142720C7DEA800BA7D54 /* Roboto-Thin.ttf */,
+				BA94142420C7DEA500BA7D54 /* Roboto-ThinItalic.ttf */,
+				BA94142320C7DEA400BA7D54 /* RobotoCondensed-Bold.ttf */,
+				BA94143120C7DEB100BA7D54 /* RobotoCondensed-BoldItalic.ttf */,
+				BA94142620C7DEA700BA7D54 /* RobotoCondensed-Italic.ttf */,
+				BA94143220C7DEB200BA7D54 /* RobotoCondensed-Light.ttf */,
+				BA94143320C7DEB300BA7D54 /* RobotoCondensed-LightItalic.ttf */,
+				BA94142520C7DEA600BA7D54 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1109619D20C4CA500040CD4B /* Kalm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110961C620C4CA520040CD4B /* Build configuration list for PBXNativeTarget "Kalm" */;
+			buildPhases = (
+				E786095EE5C0BA551ABE6CD5 /* [CP] Check Pods Manifest.lock */,
+				1109619A20C4CA500040CD4B /* Sources */,
+				1109619B20C4CA500040CD4B /* Frameworks */,
+				1109619C20C4CA500040CD4B /* Resources */,
+				673973E370803A880A86D8E2 /* [CP] Embed Pods Frameworks */,
+				BAD09C6A20E2513C0066BD89 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD09C6120E2513C0066BD89 /* PBXTargetDependency */,
+			);
+			name = Kalm;
+			productName = Kalm;
+			productReference = 1109619E20C4CA500040CD4B /* Kalm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		110961B120C4CA520040CD4B /* KalmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110961C920C4CA520040CD4B /* Build configuration list for PBXNativeTarget "KalmTests" */;
+			buildPhases = (
+				E05FB8BBBFEAD6BFDA8FA89E /* [CP] Check Pods Manifest.lock */,
+				110961AE20C4CA520040CD4B /* Sources */,
+				110961AF20C4CA520040CD4B /* Frameworks */,
+				110961B020C4CA520040CD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110961B420C4CA520040CD4B /* PBXTargetDependency */,
+			);
+			name = KalmTests;
+			productName = KalmTests;
+			productReference = 110961B220C4CA520040CD4B /* KalmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		110961BC20C4CA520040CD4B /* KalmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110961CC20C4CA520040CD4B /* Build configuration list for PBXNativeTarget "KalmUITests" */;
+			buildPhases = (
+				64E569E660E10FDCC7F5701E /* [CP] Check Pods Manifest.lock */,
+				110961B920C4CA520040CD4B /* Sources */,
+				110961BA20C4CA520040CD4B /* Frameworks */,
+				110961BB20C4CA520040CD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110961BF20C4CA520040CD4B /* PBXTargetDependency */,
+			);
+			name = KalmUITests;
+			productName = KalmUITests;
+			productReference = 110961BD20C4CA520040CD4B /* KalmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BAD09C4420E2513A0066BD89 /* KalmWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD09C6920E2513C0066BD89 /* Build configuration list for PBXNativeTarget "KalmWatch" */;
+			buildPhases = (
+				BAD09C4320E2513A0066BD89 /* Resources */,
+				BAD09C6820E2513C0066BD89 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD09C5420E2513C0066BD89 /* PBXTargetDependency */,
+			);
+			name = KalmWatch;
+			productName = KalmWatch;
+			productReference = BAD09C4520E2513A0066BD89 /* KalmWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BAD09C5020E2513B0066BD89 /* KalmWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD09C6720E2513C0066BD89 /* Build configuration list for PBXNativeTarget "KalmWatch Extension" */;
+			buildPhases = (
+				BAD09C4D20E2513B0066BD89 /* Sources */,
+				BAD09C4E20E2513B0066BD89 /* Frameworks */,
+				BAD09C4F20E2513B0066BD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KalmWatch Extension";
+			productName = "KalmWatch Extension";
+			productReference = BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1109619620C4CA500040CD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Marvin Randy";
+				TargetAttributes = {
+					1109619D20C4CA500040CD4B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					110961B120C4CA520040CD4B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 1109619D20C4CA500040CD4B;
+					};
+					110961BC20C4CA520040CD4B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 1109619D20C4CA500040CD4B;
+					};
+					BAD09C4420E2513A0066BD89 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BAD09C5020E2513B0066BD89 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1109619920C4CA500040CD4B /* Build configuration list for PBXProject "Kalm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1109619520C4CA500040CD4B;
+			productRefGroup = 1109619F20C4CA500040CD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1109619D20C4CA500040CD4B /* Kalm */,
+				110961B120C4CA520040CD4B /* KalmTests */,
+				110961BC20C4CA520040CD4B /* KalmUITests */,
+				BAD09C4420E2513A0066BD89 /* KalmWatch */,
+				BAD09C5020E2513B0066BD89 /* KalmWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1109619C20C4CA500040CD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA94144520C7DEB400BA7D54 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				BA94143F20C7DEB400BA7D54 /* Roboto-Medium.ttf in Resources */,
+				BA94144620C7DEB400BA7D54 /* Roboto-Light.ttf in Resources */,
+				BA94143920C7DEB400BA7D54 /* Roboto-Thin.ttf in Resources */,
+				BAF4325920C8E74300521B56 /* Assets.xcassets in Resources */,
+				BA94143620C7DEB400BA7D54 /* Roboto-ThinItalic.ttf in Resources */,
+				BA94143C20C7DEB400BA7D54 /* Roboto-LightItalic.ttf in Resources */,
+				BA94144320C7DEB400BA7D54 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				BA94143520C7DEB400BA7D54 /* RobotoCondensed-Bold.ttf in Resources */,
+				BA94143720C7DEB400BA7D54 /* RobotoCondensed-Regular.ttf in Resources */,
+				BA94144120C7DEB400BA7D54 /* Roboto-Italic.ttf in Resources */,
+				110961A720C4CA500040CD4B /* Main.storyboard in Resources */,
+				BA94144420C7DEB400BA7D54 /* RobotoCondensed-Light.ttf in Resources */,
+				BA94143B20C7DEB400BA7D54 /* Roboto-Regular.ttf in Resources */,
+				BA94143820C7DEB400BA7D54 /* RobotoCondensed-Italic.ttf in Resources */,
+				BA94143D20C7DEB400BA7D54 /* Roboto-MediumItalic.ttf in Resources */,
+				BA94143A20C7DEB400BA7D54 /* Roboto-BlackItalic.ttf in Resources */,
+				BA94144020C7DEB400BA7D54 /* Roboto-BoldItalic.ttf in Resources */,
+				BAF4325E20C8ED5D00521B56 /* LaunchScreen.storyboard in Resources */,
+				BA94144220C7DEB400BA7D54 /* Roboto-Bold.ttf in Resources */,
+				BA94143E20C7DEB400BA7D54 /* Roboto-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961B020C4CA520040CD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961BB20C4CA520040CD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD09C4320E2513A0066BD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD09C4B20E2513B0066BD89 /* Assets.xcassets in Resources */,
+				BAD09C4920E2513A0066BD89 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD09C4F20E2513B0066BD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD09C5D20E2513C0066BD89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64E569E660E10FDCC7F5701E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673973E370803A880A86D8E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kalm/Pods-Kalm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kalm/Pods-Kalm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05FB8BBBFEAD6BFDA8FA89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E786095EE5C0BA551ABE6CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kalm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1109619A20C4CA500040CD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */,
+				110961A220C4CA500040CD4B /* AppDelegate.swift in Sources */,
+				BADBD93520C7786200AFD9D2 /* BreathingViewController.swift in Sources */,
+				BAD09C7C20E2B78B0066BD89 /* Section.swift in Sources */,
+				BADBD93320C76A4E00AFD9D2 /* HomeViewController.swift in Sources */,
+				BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */,
+				BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */,
+				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
+				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
+				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,
+				BAD09C7B20E2B78B0066BD89 /* ExpandableHeaderView.swift in Sources */,
+				BAD09C7820E2B4990066BD89 /* InfoViewController.swift in Sources */,
+				BAD09C4120E242760066BD89 /* ChartColors.swift in Sources */,
+				BA5999D620C8E057003D1830 /* PageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961AE20C4CA520040CD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110961B720C4CA520040CD4B /* KalmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110961B920C4CA520040CD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110961C220C4CA520040CD4B /* KalmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD09C4D20E2513B0066BD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD09C5B20E2513C0066BD89 /* NotificationController.swift in Sources */,
+				BAD09C5920E2513C0066BD89 /* ExtensionDelegate.swift in Sources */,
+				BAD09C5720E2513C0066BD89 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		110961B420C4CA520040CD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1109619D20C4CA500040CD4B /* Kalm */;
+			targetProxy = 110961B320C4CA520040CD4B /* PBXContainerItemProxy */;
+		};
+		110961BF20C4CA520040CD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1109619D20C4CA500040CD4B /* Kalm */;
+			targetProxy = 110961BE20C4CA520040CD4B /* PBXContainerItemProxy */;
+		};
+		BAD09C5420E2513C0066BD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD09C5020E2513B0066BD89 /* KalmWatch Extension */;
+			targetProxy = BAD09C5320E2513C0066BD89 /* PBXContainerItemProxy */;
+		};
+		BAD09C6120E2513C0066BD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD09C4420E2513A0066BD89 /* KalmWatch */;
+			targetProxy = BAD09C6020E2513C0066BD89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		110961A520C4CA500040CD4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110961A620C4CA500040CD4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD09C4720E2513A0066BD89 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD09C4820E2513A0066BD89 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF4325D20C8ED5D00521B56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		110961C420C4CA520040CD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		110961C520C4CA520040CD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		110961C720C4CA520040CD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = Kalm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		110961C820C4CA520040CD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = Kalm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		110961CA20C4CA520040CD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D409F068DCAAD2420918C07 /* Pods-KalmTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = KalmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.KalmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kalm.app/Kalm";
+			};
+			name = Debug;
+		};
+		110961CB20C4CA520040CD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = KalmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.KalmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kalm.app/Kalm";
+			};
+			name = Release;
+		};
+		110961CD20C4CA520040CD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2917846DDD8840DE2D5CED42 /* Pods-KalmUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = KalmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.KalmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kalm;
+			};
+			name = Debug;
+		};
+		110961CE20C4CA520040CD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EB988EDC4621E664FE7022 /* Pods-KalmUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = KalmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.KalmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kalm;
+			};
+			name = Release;
+		};
+		BAD09C6320E2513C0066BD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				IBSC_MODULE = KalmWatch_Extension;
+				INFOPLIST_FILE = KalmWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BAD09C6420E2513C0066BD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				IBSC_MODULE = KalmWatch_Extension;
+				INFOPLIST_FILE = KalmWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		BAD09C6520E2513C0066BD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = "KalmWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BAD09C6620E2513C0066BD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP5Y9ZPS3B;
+				INFOPLIST_FILE = "KalmWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1109619920C4CA500040CD4B /* Build configuration list for PBXProject "Kalm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110961C420C4CA520040CD4B /* Debug */,
+				110961C520C4CA520040CD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110961C620C4CA520040CD4B /* Build configuration list for PBXNativeTarget "Kalm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110961C720C4CA520040CD4B /* Debug */,
+				110961C820C4CA520040CD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110961C920C4CA520040CD4B /* Build configuration list for PBXNativeTarget "KalmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110961CA20C4CA520040CD4B /* Debug */,
+				110961CB20C4CA520040CD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110961CC20C4CA520040CD4B /* Build configuration list for PBXNativeTarget "KalmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110961CD20C4CA520040CD4B /* Debug */,
+				110961CE20C4CA520040CD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD09C6720E2513C0066BD89 /* Build configuration list for PBXNativeTarget "KalmWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD09C6520E2513C0066BD89 /* Debug */,
+				BAD09C6620E2513C0066BD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD09C6920E2513C0066BD89 /* Build configuration list for PBXNativeTarget "KalmWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD09C6320E2513C0066BD89 /* Debug */,
+				BAD09C6420E2513C0066BD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1109619620C4CA500040CD4B /* Project object */;
+}

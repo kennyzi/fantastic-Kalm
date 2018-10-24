@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ltN-Jg-Pcy">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="KalmWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="hvE-lP-eAC">
+            <objects>
+                <controller id="ltN-Jg-Pcy" customClass="InterfaceController" customModule="KalmWatch" customModuleProvider="target">
+                    <items>
+                        <button width="105" height="96" alignment="center" backgroundImage="Start256" id="GKs-FG-pq8">
+                            <connections>
+                                <action selector="Start" destination="ltN-Jg-Pcy" id="qaL-JB-haB"/>
+                            </connections>
+                        </button>
+                        <label width="130" height="50" alignment="center" text="Breath using your stomach " textAlignment="center" numberOfLines="2" id="4nf-6k-Xbl">
+                            <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="buttonStart" destination="GKs-FG-pq8" id="w1m-Hy-4tJ"/>
+                        <outlet property="labelTimer" destination="4nf-6k-Xbl" id="yFQ-yw-gN8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="333"/>
+        </scene>
+        <!--breathing-->
+        <scene sceneID="ajT-0c-MZJ">
+            <objects>
+                <controller identifier="breathing" id="dgi-B7-44b">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="OvalDone256" id="nR2-W2-qTE"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="466.41025641025647" y="333.46153846153851"/>
+        </scene>
+    </scenes>
+</document>
