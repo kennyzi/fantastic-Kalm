@@ -57,6 +57,9 @@
 		BAF4325920C8E74300521B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325820C8E74200521B56 /* Assets.xcassets */; };
 		BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */; };
 		BAF4325E20C8ED5D00521B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */; };
+		CD21FCA221805F2400372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA121805F2400372314 /* AmbientSound.m4a */; };
+		CD21FCA321805F2400372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA121805F2400372314 /* AmbientSound.m4a */; };
+		CD21FCA421805F2400372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA121805F2400372314 /* AmbientSound.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +183,7 @@
 		BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreenViewController.swift; sourceTree = "<group>"; };
 		BAF4325D20C8ED5D00521B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD21FCA121805F2400372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -253,6 +257,7 @@
 				BA4DB09920DCCDF0004199AB /* Introduction */,
 				1111714120DBAF0A003065AF /* Breathing */,
 				1111713E20DBAEC4003065AF /* Home */,
+				CD21FC9A21805E9F00372314 /* Music */,
 				110961A520C4CA500040CD4B /* Main.storyboard */,
 				BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */,
 				110961A120C4CA500040CD4B /* AppDelegate.swift */,
@@ -433,6 +438,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		CD21FC9A21805E9F00372314 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				CD21FCA121805F2400372314 /* AmbientSound.m4a */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,6 +607,7 @@
 				BA94143C20C7DEB400BA7D54 /* Roboto-LightItalic.ttf in Resources */,
 				BA94144320C7DEB400BA7D54 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				BA94143520C7DEB400BA7D54 /* RobotoCondensed-Bold.ttf in Resources */,
+				CD21FCA221805F2400372314 /* AmbientSound.m4a in Resources */,
 				BA94143720C7DEB400BA7D54 /* RobotoCondensed-Regular.ttf in Resources */,
 				BA94144120C7DEB400BA7D54 /* Roboto-Italic.ttf in Resources */,
 				110961A720C4CA500040CD4B /* Main.storyboard in Resources */,
@@ -627,6 +641,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD21FCA321805F2400372314 /* AmbientSound.m4a in Resources */,
 				BAD09C4B20E2513B0066BD89 /* Assets.xcassets in Resources */,
 				BAD09C4920E2513A0066BD89 /* Interface.storyboard in Resources */,
 			);
@@ -637,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD09C5D20E2513C0066BD89 /* Assets.xcassets in Resources */,
+				CD21FCA421805F2400372314 /* AmbientSound.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
