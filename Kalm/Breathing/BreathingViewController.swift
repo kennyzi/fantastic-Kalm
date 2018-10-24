@@ -24,9 +24,13 @@ class BreathingViewController: UIViewController {
     var time = 0
     var timer = Timer()
     var timer2 = Timer()
+    var timeStart : Date?
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        
+        // Take a note time Start
+        timeStart = Date()
         
         // Start the timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BreathingViewController.updateTimer), userInfo: nil, repeats: true)
@@ -121,6 +125,7 @@ class BreathingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DoneBreathingViewController{
             destination.time = time
+            destination.timeStart = timeStart
         }
     }
 }

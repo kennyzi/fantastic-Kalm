@@ -19,10 +19,16 @@ class DoneBreathingViewController: UIViewController {
     var minutes = 0
     var seconds = 0
     
+    var timeStart : Date?
+    var timeEnd : Date?
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //take a note time End
         
+        timeEnd = Date()
+        
+        //update Label in Storyboard
         if time > 59 {
             minutes = time / 60
             seconds = time - (60 * minutes)
@@ -59,5 +65,4 @@ class DoneBreathingViewController: UIViewController {
     @IBAction func backToMainMenuButtonPressed() {
         performSegue(withIdentifier: "doneBreathingToHome", sender: self)
     }
-    
 }
