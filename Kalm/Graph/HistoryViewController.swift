@@ -14,6 +14,8 @@ class HistoryViewController : UIViewController{
     var sessions : [Session] = []
     let cloudKitHelper = CloudKitHelper()
     
+    let loadingAlert = UIAlertController(title: "Loading", message: "your conntent is beenig loaded", preferredStyle: UIAlertController.Style.alert)
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -54,19 +56,11 @@ class HistoryViewController : UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-<<<<<<< HEAD
         print(sessions)
-        loadingAlert()
+        present(loadingAlert,animated: true , completion: nil)
         tableView.reloadData()
-=======
-       
->>>>>>> 0fa16681b56951e1311e35a48fa03106c781e480
     }
-    func loadingAlert(){
-        let loadingAlert = UIAlertController(title: "Loading", message: "your conntent is beenig loaded", preferredStyle: UIAlertController.Style.alert)
-        loadingAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        self.present(loadingAlert,animated: true , completion: nil)
-    }
+  
 }
 
 extension HistoryViewController : UITableViewDataSource, UITableViewDelegate{
@@ -132,7 +126,7 @@ extension HistoryViewController : UITableViewDataSource, UITableViewDelegate{
         DispatchQueue.main.async {
             cell.timeLabel.text = timeFormater.string(from: startDate)
         }
-        
+        loadingAlert.dismiss(animated: true, completion: nil)
         return cell
     }
     
