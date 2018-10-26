@@ -33,7 +33,13 @@ class HistoryViewController : UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         print(sessions)
+        loadingAlert()
         tableView.reloadData()
+    }
+    func loadingAlert(){
+        let loadingAlert = UIAlertController(title: "Loading", message: "your conntent is beenig loaded", preferredStyle: UIAlertController.Style.alert)
+        loadingAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(loadingAlert,animated: true , completion: nil)
     }
 }
 
