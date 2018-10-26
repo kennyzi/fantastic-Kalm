@@ -33,7 +33,7 @@ class CloudKitHelper {
         }
     }
     
-    func fetchStoryRecord () -> [Session]{
+    func fetchStoryRecord (handler: @escaping (([Session]) -> Void)){
         let container = CKContainer.default()
         let database = container.publicCloudDatabase
         
@@ -48,18 +48,16 @@ class CloudKitHelper {
                 print("Error Fetch : \(errorUnwrapped)")
             }
             if let recordsUnwrapped = records{
-                DispatchQueue.global().sync {
-                    recordsUnwrapped.forEach({ (record) in
-                        let session = self.decodeRecordtoSession(record: record)
-                        guard let sessionUnwrapped = session else {return}
-                        result.append(sessionUnwrapped)
-                    })
-                }
+                recordsUnwrapped.forEach({ (record) in
+                    let session = self.decodeRecordtoSession(record: record)
+                    guard let sessionUnwrapped = session else {return}
+                    result.append(sessionUnwrapped)
+                })
+                handler(result)
             }
             self.sessions = result
             print(self.sessions)
         }
-        return result
     }
     
     func decodeRecordtoSession(record : CKRecord) -> Session?{
