@@ -63,6 +63,8 @@
 		CD21FCA62180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA72180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
+		CDB09C442183004900C4F8D0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB09C432183004900C4F8D0 /* NetworkHelper.swift */; };
+		CDB09C452183004900C4F8D0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB09C432183004900C4F8D0 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +194,8 @@
 		BAF4325D20C8ED5D00521B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD21FCA52180663600372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
+		CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalmWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDB09C432183004900C4F8D0 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -306,6 +310,7 @@
 		1111713F20DBAEE5003065AF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CDB09C412183002400C4F8D0 /* Network Helper */,
 				66FA1273218060D10003A492 /* CloudKit */,
 				BAD09C3C20E242540066BD89 /* Chart */,
 				BAF4325720C8E14400521B56 /* Fonts */,
@@ -460,6 +465,15 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		CDB09C412183002400C4F8D0 /* Network Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CDB09C432183004900C4F8D0 /* NetworkHelper.swift */,
+				CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */,
+			);
+			path = "Network Helper";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -587,6 +601,7 @@
 					};
 					BAD09C4420E2513A0066BD89 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					BAD09C5020E2513B0066BD89 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -777,6 +792,7 @@
 				6647169B21805B2300D8154B /* Session.swift in Sources */,
 				BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */,
 				BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */,
+				CDB09C442183004900C4F8D0 /* NetworkHelper.swift in Sources */,
 				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
 				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
 				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,
@@ -809,6 +825,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB09C452183004900C4F8D0 /* NetworkHelper.swift in Sources */,
 				BAD09C5B20E2513C0066BD89 /* NotificationController.swift in Sources */,
 				BAD09C5920E2513C0066BD89 /* ExtensionDelegate.swift in Sources */,
 				BAD09C5720E2513C0066BD89 /* InterfaceController.swift in Sources */,
@@ -1115,14 +1132,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				IBSC_MODULE = KalmWatch_Extension;
 				INFOPLIST_FILE = KalmWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kalm/Helper/Network Helper/KalmWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
@@ -1134,14 +1159,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
 				IBSC_MODULE = KalmWatch_Extension;
 				INFOPLIST_FILE = KalmWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kalm/Helper/Network Helper/KalmWatch-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
