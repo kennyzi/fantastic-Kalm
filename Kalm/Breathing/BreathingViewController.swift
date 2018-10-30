@@ -33,7 +33,7 @@ class BreathingViewController: UIViewController {
         // Start the timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BreathingViewController.updateTimer), userInfo: nil, repeats: true)
         
-        view.addSubview(circle)
+//        view.addSubview(circle)
         
         innerCircle.layer.zPosition = .greatestFiniteMagnitude
         self.navigationController?.isNavigationBarHidden = true
