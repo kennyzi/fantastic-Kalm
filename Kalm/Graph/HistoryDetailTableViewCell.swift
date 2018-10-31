@@ -16,6 +16,24 @@ class HistoryDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        durationLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        timeLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        dateLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        if #available(iOS 10.0, *) {
+            durationLabel.adjustsFontForContentSizeCategory = true
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 10.0, *) {
+            timeLabel.adjustsFontForContentSizeCategory = true
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 10.0, *) {
+            dateLabel.adjustsFontForContentSizeCategory = true
+        } else {
+            // Fallback on earlier versions
+        }
         // Initialization code
     }
 
