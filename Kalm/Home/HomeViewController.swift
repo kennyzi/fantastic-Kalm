@@ -26,14 +26,32 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var blurView: UIView!
     
     
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var readyShapeOutlet: UIImageView!
+    
+    
     // MARK: - Variables
-    var inhaleDuration = 5
+    var inhaleDuration = 3
     var exhaleDuration = 5
     var duration = ["3 sec", "4 sec", "5 sec", "6 sec", "7 sec", "8 sec"]
     
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //AccesibilityTrait
+        readyShapeOutlet.accessibilityLabel = "Breathe indicator, Ready"
+        readyShapeOutlet.accessibilityTraits = UIAccessibilityTraitImage
+        
+        startButton.accessibilityLabel = "Start button. Press to start Session"
+        startButton.accessibilityTraits = UIAccessibilityTraitButton
+        
+        leftChangeDurationButton.accessibilityLabel = "\(inhaleDuration) seconds inhale. Tap to change"
+        leftChangeDurationButton.accessibilityTraits = UIAccessibilityTraitButton
+        
+        rightChangeDurationButton.accessibilityLabel = "\(exhaleDuration) seconds exhale. Tap to change"
+        rightChangeDurationButton.accessibilityTraits = UIAccessibilityTraitButton
+
+        
         changeDurationPickerView.delegate = self
         changeDurationPickerView.dataSource = self
         
@@ -84,6 +102,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         btn1.widthAnchor.constraint(equalToConstant: 35.0).isActive = true
         btn1.heightAnchor.constraint(equalToConstant: 35.0).isActive = true
         let item1 = UIBarButtonItem(customView: btn1)
+        item1.accessibilityLabel = "Info"
+        item1.accessibilityTraits = UIAccessibilityTraitButton
         
         let btn2 = UIButton(type: .custom)
         btn2.setImage(UIImage(named: "GraphBtn"), for: .normal)
@@ -92,6 +112,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         btn2.widthAnchor.constraint(equalToConstant: 35.0).isActive = true
         btn2.heightAnchor.constraint(equalToConstant: 35.0).isActive = true
         let item2 = UIBarButtonItem(customView: btn2)
+        item2.accessibilityLabel = "History"
+        item2.accessibilityTraits = UIAccessibilityTraitButton
         
         navigationItemTop.setLeftBarButtonItems([item1], animated: true)
         navigationItemTop.setRightBarButtonItems([item2], animated: true)
@@ -131,7 +153,12 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         blurView.alpha = 1.0
         changeDurationPickerView.selectRow(inhaleDuration-3, inComponent: 0, animated: false)
         changeDurationPickerView.selectRow(exhaleDuration-3, inComponent: 1, animated: false)
+        
+        
+        changeDurationPickerView.accessibilityLabel = "Inhale"
     }
+    
+    
     
     @IBAction func rightChangeDurationButtonPressed() {
         // Animate the bottom view
@@ -144,7 +171,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         blurView.alpha = 1.0
         changeDurationPickerView.selectRow(inhaleDuration-3, inComponent: 0, animated: false)
         changeDurationPickerView.selectRow(exhaleDuration-3, inComponent: 1, animated: false)
+        changeDurationPickerView.accessibilityLabel = "\(exhaleDuration) Exhale"
     }
+    
     
     
     // MARK: - Picker View
@@ -195,6 +224,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         inhaleDurationLabel.text = "\(inhaleDuration) sec"
         exhaleDurationLabel.text = "\(exhaleDuration) sec"
         
+        rightChangeDurationButton.accessibilityLabel = "\(exhaleDuration) seconds exhale. Tap to change"
+        leftChangeDurationButton.accessibilityLabel = "\(inhaleDuration) seconds inhale. Tap to change"
+        
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
             self.bottomView.frame = CGRect(x: 0.0, y: 812.0, width: 375.0, height: 0)
             self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: 375.0, height: 0)
@@ -209,6 +241,18 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if let destination = segue.destination as? BreathingViewController {
             destination.inhaleDuration = inhaleDuration
             destination.exhaleDuration = exhaleDuration
+        }
+    }
+}
+
+extension HomeViewController : UIPickerViewAccessibilityDelegate{
+    func pickerView(_ pickerView: UIPickerView, accessibilityLabelForComponent component: Int) -> String? {
+        if component == 0 {
+            return "inhale"
+        }
+        else
+        {
+            return "exhale"
         }
     }
 }

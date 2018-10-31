@@ -85,6 +85,12 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, viewForHeaderInSection: Int) -> UIView? {
         let header = ExpandableHeaderView()
         header.customInit(title: sections[viewForHeaderInSection].question, section: viewForHeaderInSection, delegate: self)
+        
+        let accessibilityVoiceOver = sections[viewForHeaderInSection].question
+        
+        if let voiceOver = accessibilityVoiceOver{
+            header.accessibilityLabel = "\(voiceOver). Tap to expand"
+        }
         return header
     }
     

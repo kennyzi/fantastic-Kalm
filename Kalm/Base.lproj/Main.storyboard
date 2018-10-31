@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -307,8 +307,10 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                         <outlet property="leftBarButtonView" destination="0oo-B3-MLd" id="ZSm-rA-ICR"/>
                         <outlet property="leftChangeDurationButton" destination="55B-GQ-2ci" id="743-sS-gCn"/>
                         <outlet property="navigationItemTop" destination="Kaa-an-TlP" id="yBA-YP-qdh"/>
+                        <outlet property="readyShapeOutlet" destination="XWb-yw-sxI" id="zSs-ak-B5i"/>
                         <outlet property="rightBarButtonView" destination="ujk-gF-nvB" id="8mW-bJ-TWU"/>
                         <outlet property="rightChangeDurationButton" destination="s1X-8i-miT" id="sbh-RM-Szy"/>
+                        <outlet property="startButton" destination="ywd-yV-HtU" id="Kna-eK-vWe"/>
                         <outlet property="toolbar" destination="Tqt-rG-uGC" id="d9b-Ec-D7x"/>
                         <segue destination="8Ip-31-umy" kind="show" identifier="homeToBreathing" id="djC-94-UgS"/>
                         <segue destination="QAM-ka-Vn3" kind="show" identifier="homeToGraph" id="qBy-tY-Znf"/>
@@ -428,6 +430,9 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                         <viewLayoutGuide key="safeArea" id="HkX-ux-UiG"/>
                     </view>
                     <connections>
+                        <outlet property="backtoMainMenuButton" destination="Njb-lg-MKA" id="hAN-38-ara"/>
+                        <outlet property="doneLabel" destination="Cwu-jh-nw4" id="qSG-k7-zOZ"/>
+                        <outlet property="durationLabel" destination="JOY-j3-Y4z" id="R08-Mu-tKr"/>
                         <outlet property="timerLabel" destination="wDE-HM-9Qk" id="2Ke-iL-sJ5"/>
                         <segue destination="6cX-uh-DVp" kind="show" identifier="doneBreathingToHome" id="oeQ-1E-voe"/>
                     </connections>
