@@ -27,6 +27,9 @@ class BreathingViewController: UIViewController {
     var player: AVAudioPlayer?
     var timeStart : Date?
     
+    var inhaleSFx = AVAudioPlayer()
+    var exhaleSFx = AVAudioPlayer()
+    
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         timeStart = Date()
@@ -44,6 +47,8 @@ class BreathingViewController: UIViewController {
         stopButton.accessibilityTraits = UIAccessibilityTraitButton
         
         timerLabelAccessibility()
+        setAudioExhale()
+        setAudioInhale()
         
         innerCircle.layer.zPosition = .greatestFiniteMagnitude
         self.navigationController?.isNavigationBarHidden = true
@@ -69,11 +74,19 @@ class BreathingViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        timer2.invalidate()
+        timer.invalidate()
+    }
+    
     // MARK: - Grow and Shrink Functions
     @objc func grow(){
         innerCircle.image = UIImage(named: "InhaleRound")
         let scaleAnimation = constructScaleAnimation(startingScale: 1.0, endingScale: 1.5, animationDuration: inhaleDuration)
         circle.layer.add(scaleAnimation, forKey: "scale")
+        inhaleSFx.play()
         timer2 = Timer.scheduledTimer(timeInterval: Double(inhaleDuration), target: self, selector: #selector(BreathingViewController.shrink), userInfo: nil, repeats: false)
     }
     
@@ -81,6 +94,7 @@ class BreathingViewController: UIViewController {
         innerCircle.image = UIImage(named: "ExhaleRound")
         let scaleAnimation = constructSmallScaleAnimation(startingScale: 1.5, endingScale: 1.0, animationDuration: exhaleDuration)
         circle.layer.add(scaleAnimation, forKey: "scale")
+        exhaleSFx.play()
         timer2 = Timer.scheduledTimer(timeInterval: Double(exhaleDuration), target: self, selector: #selector(BreathingViewController.grow), userInfo: nil, repeats: false)
         
     }
@@ -168,6 +182,26 @@ class BreathingViewController: UIViewController {
             
         } catch  {
             print(error.localizedDescription)
+        }
+    }
+    
+    func setAudioInhale(){
+        let musicFile = Bundle.main.path(forResource: "inhale", ofType: ".mp3")
+        
+        do{
+            try inhaleSFx = AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicFile!))
+        }catch {
+            print("audio error")
+        }
+    }
+    
+    func setAudioExhale(){
+        let musicFile = Bundle.main.path(forResource: "exhale", ofType: ".mp3")
+        
+        do{
+            try exhaleSFx = AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicFile!))
+        }catch {
+            print("audio error")
         }
     }
     

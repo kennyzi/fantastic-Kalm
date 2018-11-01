@@ -22,6 +22,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         btn.addTarget(self, action: #selector(InfoViewController.backButtonPressed), for: .touchUpInside)
         btn.widthAnchor.constraint(equalToConstant: 35.0).isActive = true
         btn.heightAnchor.constraint(equalToConstant: 35.0).isActive = true
+        btn.accessibilityLabel = "Back"
         let item = UIBarButtonItem(customView: btn)
 
         let infoTitle = UILabel()
@@ -38,6 +39,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.navigationItem.setLeftBarButtonItems([item], animated: true)
         self.navigationItem.titleView = infoTitle
+   
        
         tableView.delegate = self
         tableView.dataSource = self
