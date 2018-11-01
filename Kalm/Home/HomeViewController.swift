@@ -25,6 +25,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var blurView: UIView!
     
+    @IBOutlet weak var readyShapeOutlet: UIImageView!
+    @IBOutlet weak var startOutlet: UIButton!
     
     // MARK: - Variables
     var inhaleDuration = 5
@@ -34,6 +36,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //ignore invert color
+        readyShapeOutlet.accessibilityIgnoresInvertColors = true
+        startOutlet.accessibilityIgnoresInvertColors = true
+        
         changeDurationPickerView.delegate = self
         changeDurationPickerView.dataSource = self
         

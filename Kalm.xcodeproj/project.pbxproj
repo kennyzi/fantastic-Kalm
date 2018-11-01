@@ -63,8 +63,6 @@
 		CD21FCA62180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA72180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
-		CDB09C442183004900C4F8D0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB09C432183004900C4F8D0 /* NetworkHelper.swift */; };
-		CDB09C452183004900C4F8D0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB09C432183004900C4F8D0 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,7 +193,6 @@
 		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD21FCA52180663600372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
 		CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalmWatch-Bridging-Header.h"; sourceTree = "<group>"; };
-		CDB09C432183004900C4F8D0 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -468,7 +465,6 @@
 		CDB09C412183002400C4F8D0 /* Network Helper */ = {
 			isa = PBXGroup;
 			children = (
-				CDB09C432183004900C4F8D0 /* NetworkHelper.swift */,
 				CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */,
 			);
 			path = "Network Helper";
@@ -792,7 +788,6 @@
 				6647169B21805B2300D8154B /* Session.swift in Sources */,
 				BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */,
 				BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */,
-				CDB09C442183004900C4F8D0 /* NetworkHelper.swift in Sources */,
 				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
 				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
 				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,
@@ -825,7 +820,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB09C452183004900C4F8D0 /* NetworkHelper.swift in Sources */,
 				BAD09C5B20E2513C0066BD89 /* NotificationController.swift in Sources */,
 				BAD09C5920E2513C0066BD89 /* ExtensionDelegate.swift in Sources */,
 				BAD09C5720E2513C0066BD89 /* InterfaceController.swift in Sources */,

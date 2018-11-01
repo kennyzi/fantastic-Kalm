@@ -31,6 +31,8 @@ class BreathingViewController: UIViewController {
     override func viewDidLoad() {
         timeStart = Date()
         stopButton.accessibilityIgnoresInvertColors = true
+        circle.accessibilityIgnoresInvertColors = true
+        innerCircle.accessibilityIgnoresInvertColors = true
         // Start the timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BreathingViewController.updateTimer), userInfo: nil, repeats: true)
         

@@ -12,6 +12,8 @@ class DoneBreathingViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var orangeCircle: UIImageView!
+    @IBOutlet weak var backToMainMenuOutlet: UIButton!
     
     
     // MARK: - Variables
@@ -25,7 +27,8 @@ class DoneBreathingViewController: UIViewController {
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         //take a note time End
-        
+        orangeCircle.accessibilityIgnoresInvertColors = true
+        backToMainMenuOutlet.accessibilityIgnoresInvertColors = true
         timeEnd = Date()
         saveSession()
         
