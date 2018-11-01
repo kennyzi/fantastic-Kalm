@@ -38,6 +38,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //IGNORE LIST
+        startButton.accessibilityIgnoresInvertColors = true
+        readyShapeOutlet.accessibilityIgnoresInvertColors = true
+        
         //AccesibilityTrait
         readyShapeOutlet.accessibilityLabel = "Breathe indicator, Ready"
         readyShapeOutlet.accessibilityTraits = UIAccessibilityTraitImage
