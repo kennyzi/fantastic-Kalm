@@ -40,6 +40,8 @@ class HistoryViewController : UIViewController{
         
         tableView.topAnchor.constraint(equalTo: (self.navigationController?.navigationBar.bottomAnchor)!, constant: 0)
         
+        self.navigationItem.title = "Session History"
+        self.navigationController?.navigationBar.backItem?.accessibilityLabel = "Back"
         
         DispatchQueue.global().sync {
             cloudKitHelper.fetchStoryRecord(handler: { (sessions) in
