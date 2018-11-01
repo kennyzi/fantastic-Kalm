@@ -13,6 +13,8 @@
 		110961C220C4CA520040CD4B /* KalmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961C120C4CA520040CD4B /* KalmUITests.swift */; };
 		265ECF4DA1F5EF792CE6B58F /* Pods_KalmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */; };
 		6647169B21805B2300D8154B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6647169A21805B2300D8154B /* Session.swift */; };
+		6653FE01218B07FE00DF5F11 /* exhale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6653FDFF218B07FE00DF5F11 /* exhale.mp3 */; };
+		6653FE02218B07FE00DF5F11 /* inhale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6653FE00218B07FE00DF5F11 /* inhale.mp3 */; };
 		66549D102180743800FAA423 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D0F2180743800FAA423 /* HistoryViewController.swift */; };
 		66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */; };
 		66FA1275218060DE0003A492 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA1274218060DE0003A492 /* CloudKitHelper.swift */; };
@@ -139,6 +141,8 @@
 		4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.debug.xcconfig"; sourceTree = "<group>"; };
 		59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.release.xcconfig"; sourceTree = "<group>"; };
 		6647169A21805B2300D8154B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		6653FDFF218B07FE00DF5F11 /* exhale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exhale.mp3; sourceTree = "<group>"; };
+		6653FE00218B07FE00DF5F11 /* inhale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inhale.mp3; sourceTree = "<group>"; };
 		66549D0F2180743800FAA423 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		66FA1274218060DE0003A492 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
@@ -457,6 +461,8 @@
 		CD21FC9A21805E9F00372314 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				6653FDFF218B07FE00DF5F11 /* exhale.mp3 */,
+				6653FE00218B07FE00DF5F11 /* inhale.mp3 */,
 				CD21FCA52180663600372314 /* AmbientSound.m4a */,
 			);
 			path = Music;
@@ -646,6 +652,7 @@
 				BA94143920C7DEB400BA7D54 /* Roboto-Thin.ttf in Resources */,
 				BAF4325920C8E74300521B56 /* Assets.xcassets in Resources */,
 				BA94143620C7DEB400BA7D54 /* Roboto-ThinItalic.ttf in Resources */,
+				6653FE01218B07FE00DF5F11 /* exhale.mp3 in Resources */,
 				BA94143C20C7DEB400BA7D54 /* Roboto-LightItalic.ttf in Resources */,
 				BA94144320C7DEB400BA7D54 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				BA94143520C7DEB400BA7D54 /* RobotoCondensed-Bold.ttf in Resources */,
@@ -655,6 +662,7 @@
 				BA94144420C7DEB400BA7D54 /* RobotoCondensed-Light.ttf in Resources */,
 				BA94143B20C7DEB400BA7D54 /* Roboto-Regular.ttf in Resources */,
 				BA94143820C7DEB400BA7D54 /* RobotoCondensed-Italic.ttf in Resources */,
+				6653FE02218B07FE00DF5F11 /* inhale.mp3 in Resources */,
 				BA94143D20C7DEB400BA7D54 /* Roboto-MediumItalic.ttf in Resources */,
 				BA94143A20C7DEB400BA7D54 /* Roboto-BlackItalic.ttf in Resources */,
 				BA94144020C7DEB400BA7D54 /* Roboto-BoldItalic.ttf in Resources */,

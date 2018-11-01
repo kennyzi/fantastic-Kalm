@@ -423,7 +423,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1Zd-9p-kdO" secondAttribute="height" multiplier="241:38" id="g21-pL-xLT"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="StopBtn2"/>
+                                <state key="normal" image="StopBtn2"/>
                                 <connections>
                                     <action selector="stopButtonPressed" destination="8Ip-31-umy" eventType="touchUpInside" id="spZ-JN-6hg"/>
                                 </connections>
@@ -716,6 +716,6 @@ As you breathe, pay attention to the words in the circle and repeat them in your
         <image name="Wallpaper" width="1125" height="2430"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="djC-94-UgS"/>
+        <segue reference="fkM-hG-zk5"/>
     </inferredMetricsTieBreakers>
 </document>
