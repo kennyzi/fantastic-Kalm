@@ -38,6 +38,8 @@ class HistoryViewController : UIViewController{
 //            }
 //        }
         
+        tableView.topAnchor.constraint(equalTo: (self.navigationController?.navigationBar.bottomAnchor)!, constant: 0)
+        
         
         DispatchQueue.global().sync {
             cloudKitHelper.fetchStoryRecord(handler: { (sessions) in
@@ -115,9 +117,17 @@ extension HistoryViewController : UITableViewDataSource, UITableViewDelegate{
             }
         }
         
+        if minutes != 0{
+            cell.durationLabel.accessibilityLabel = "\(minutes) minutes, \(seconds) seconds duration"
+        }else{
+            cell.durationLabel.accessibilityLabel = "\(seconds) seconds duration"
+        }
+        
         DispatchQueue.main.async {
             cell.dateLabel.text = dateFormater.string(from: startDate)
         }
+        
+        
         
         let timeFormater = DateFormatter()
         timeFormater.timeStyle = .short
@@ -126,6 +136,9 @@ extension HistoryViewController : UITableViewDataSource, UITableViewDelegate{
         DispatchQueue.main.async {
             cell.timeLabel.text = timeFormater.string(from: startDate)
         }
+        
+        cell.timeLabel.accessibilityLabel = "on \(timeFormater.string(from: startDate))"
+        
         loadingAlert.dismiss(animated: true, completion: nil)
         return cell
     }
