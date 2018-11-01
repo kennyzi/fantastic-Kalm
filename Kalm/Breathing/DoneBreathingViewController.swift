@@ -15,6 +15,9 @@ class DoneBreathingViewController: UIViewController {
     @IBOutlet weak var orangeCircle: UIImageView!
     @IBOutlet weak var backToMainMenuOutlet: UIButton!
     
+    @IBOutlet weak var backtoMainMenuButton: UIButton!
+    @IBOutlet weak var doneLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
     
     // MARK: - Variables
     var time = 0
@@ -54,6 +57,19 @@ class DoneBreathingViewController: UIViewController {
                 timerLabel.text = "\(minutes) : \(seconds)"
             }
         }
+        
+        doneLabel.accessibilityLabel = "Your session is done"
+        
+        if minutes != 0{
+            durationLabel.accessibilityLabel = "Your session has finished in \(minutes) minutes \(seconds) seconds"
+            timerLabel.accessibilityLabel = "Your session has finished in \(minutes) minutes \(seconds) seconds"
+        }else{
+             durationLabel.accessibilityLabel = "Your session has finished in \(seconds) seconds"
+            timerLabel.accessibilityLabel = "Your session has finished in \(seconds) seconds"
+        }
+        
+        backtoMainMenuButton.accessibilityLabel = "Tap to back to main menu"
+        backtoMainMenuButton.accessibilityTraits = UIAccessibilityTraitButton
         
         super.viewDidLoad()
         

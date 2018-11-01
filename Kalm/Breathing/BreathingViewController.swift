@@ -36,7 +36,14 @@ class BreathingViewController: UIViewController {
         // Start the timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BreathingViewController.updateTimer), userInfo: nil, repeats: true)
         
+        let timerVoiceOver = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(voiceOverTalk), userInfo: nil, repeats: true)
+        
 //        view.addSubview(circle)
+        
+        stopButton.accessibilityLabel = "Stop Button. Tap to stop"
+        stopButton.accessibilityTraits = UIAccessibilityTraitButton
+        
+        timerLabelAccessibility()
         
         innerCircle.layer.zPosition = .greatestFiniteMagnitude
         self.navigationController?.isNavigationBarHidden = true
@@ -52,6 +59,14 @@ class BreathingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         grow()
+    }
+    
+    func timerLabelAccessibility(){
+        if minutes != 0{
+             timerLabel.accessibilityLabel = "Your session has been started for \(minutes) minutes \(seconds) seconds"
+        }else{
+             timerLabel.accessibilityLabel = "Your session has been started for \(seconds) seconds"
+        }
     }
     
     // MARK: - Grow and Shrink Functions
@@ -117,6 +132,8 @@ class BreathingViewController: UIViewController {
                 timerLabel.text = "\(minutes) : \(seconds)"
             }
         }
+        
+        timerLabelAccessibility()
     }
     
     // MARK: - Button Delegate
@@ -152,5 +169,9 @@ class BreathingViewController: UIViewController {
         } catch  {
             print(error.localizedDescription)
         }
+    }
+    
+    @objc func voiceOverTalk(){
+        UIAccessibility.isVoiceOverRunning
     }
 }

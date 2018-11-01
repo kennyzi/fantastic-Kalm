@@ -15,6 +15,7 @@
 		6647169B21805B2300D8154B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6647169A21805B2300D8154B /* Session.swift */; };
 		66549D102180743800FAA423 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D0F2180743800FAA423 /* HistoryViewController.swift */; };
 		66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */; };
+		66AE950F2189A6E100A0B700 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE950E2189A6E100A0B700 /* NetworkHelper.swift */; };
 		66FA1275218060DE0003A492 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA1274218060DE0003A492 /* CloudKitHelper.swift */; };
 		66FA127B218070B40003A492 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA127A218070B40003A492 /* CloudKit.framework */; };
 		694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */; };
@@ -141,6 +142,7 @@
 		6647169A21805B2300D8154B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		66549D0F2180743800FAA423 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		66AE950E2189A6E100A0B700 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		66FA1274218060DE0003A492 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		66FA127621806BF50003A492 /* KalmWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KalmWatch Extension.entitlements"; sourceTree = "<group>"; };
 		66FA1279218070B00003A492 /* Kalm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kalm.entitlements; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */,
+				66AE950E2189A6E100A0B700 /* NetworkHelper.swift */,
 			);
 			path = "Network Helper";
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				6647169B21805B2300D8154B /* Session.swift in Sources */,
 				BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */,
 				BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */,
+				66AE950F2189A6E100A0B700 /* NetworkHelper.swift in Sources */,
 				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
 				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
 				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,
@@ -1010,7 +1014,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1031,7 +1035,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KalmTeam3.Kalm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
