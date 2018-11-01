@@ -74,6 +74,8 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGv-yi-u4A">
                                                     <rect key="frame" x="-6" y="-8.3333333333333321" width="355" height="60.333333333333329"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-m9-V6G">
+                                                    <rect key="frame" x="15" y="11.666666666666671" width="313" height="20.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
                                                             <rect key="frame" x="19.999999999999996" y="20" width="41.666666666666657" height="20.333333333333329"/>
@@ -399,17 +401,10 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                         <outlet property="leftBarButtonView" destination="0oo-B3-MLd" id="ZSm-rA-ICR"/>
                         <outlet property="leftChangeDurationButton" destination="55B-GQ-2ci" id="743-sS-gCn"/>
                         <outlet property="navigationItemTop" destination="Kaa-an-TlP" id="yBA-YP-qdh"/>
-<<<<<<< HEAD
-                        <outlet property="readyShapeOutlet" destination="XWb-yw-sxI" id="f20-JV-kBa"/>
-                        <outlet property="rightBarButtonView" destination="ujk-gF-nvB" id="8mW-bJ-TWU"/>
-                        <outlet property="rightChangeDurationButton" destination="s1X-8i-miT" id="sbh-RM-Szy"/>
-                        <outlet property="startOutlet" destination="ywd-yV-HtU" id="NSQ-nM-b9d"/>
-=======
                         <outlet property="readyShapeOutlet" destination="XWb-yw-sxI" id="zSs-ak-B5i"/>
                         <outlet property="rightBarButtonView" destination="ujk-gF-nvB" id="8mW-bJ-TWU"/>
                         <outlet property="rightChangeDurationButton" destination="s1X-8i-miT" id="sbh-RM-Szy"/>
                         <outlet property="startButton" destination="ywd-yV-HtU" id="Kna-eK-vWe"/>
->>>>>>> 9590e133282025fe9e752ae5f645dea80c5dd5a5
                         <outlet property="toolbar" destination="Tqt-rG-uGC" id="d9b-Ec-D7x"/>
                         <segue destination="8Ip-31-umy" kind="show" identifier="homeToBreathing" id="djC-94-UgS"/>
                         <segue destination="QAM-ka-Vn3" kind="show" identifier="homeToGraph" id="qBy-tY-Znf"/>
@@ -441,23 +436,12 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                     <constraint firstAttribute="width" secondItem="f0y-jP-8pL" secondAttribute="height" multiplier="1:1" id="tAS-CB-iUo"/>
                                 </constraints>
                             </imageView>
-<<<<<<< HEAD
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InhaleRound" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-jP-8pL" userLabel="InnerRound">
-                                <rect key="frame" x="115" y="171" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-9p-kdO">
-                                <rect key="frame" x="67" y="538" width="240" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="StopBtn2"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-9p-kdO">
                                 <rect key="frame" x="67" y="537.66666666666663" width="241" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1Zd-9p-kdO" secondAttribute="height" multiplier="241:38" id="g21-pL-xLT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="StopBtn"/>
->>>>>>> 9590e133282025fe9e752ae5f645dea80c5dd5a5
                                 <connections>
                                     <action selector="stopButtonPressed" destination="8Ip-31-umy" eventType="touchUpInside" id="spZ-JN-6hg"/>
                                 </connections>
@@ -547,19 +531,12 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <color key="textColor" red="0.4941176471" green="0.79215686269999996" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njb-lg-MKA" userLabel="Back to main menu button">
-                                <rect key="frame" x="67" y="538" width="240" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BackBtnToMenu2"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njb-lg-MKA" userLabel="Back to main menu button">
                                 <rect key="frame" x="67" y="538" width="241" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Njb-lg-MKA" secondAttribute="height" multiplier="241:38" id="CnC-z9-ztT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="BackBtnToMenu"/>
->>>>>>> 9590e133282025fe9e752ae5f645dea80c5dd5a5
                                 <connections>
                                     <action selector="backToMainMenuButtonPressed" destination="fJl-5U-XQv" eventType="touchUpInside" id="lar-MF-a8M"/>
                                 </connections>
