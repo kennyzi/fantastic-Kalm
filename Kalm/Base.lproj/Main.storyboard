@@ -180,7 +180,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2tS-pu-aq1" userLabel="Inhale Stack View">
                                                 <rect key="frame" x="0.0" y="19.999999999999993" width="107.66666666666667" height="112.33333333333331"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhale" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-AY-n52">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhale2" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-AY-n52">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="cAV-AY-n52" secondAttribute="height" multiplier="107:43" id="047-lx-yy4"/>
@@ -233,7 +233,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tzd-iK-EmI" userLabel="Exhale Stack View">
                                                 <rect key="frame" x="0.0" y="19.999999999999993" width="107.66666666666667" height="112.33333333333331"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exhale" translatesAutoresizingMaskIntoConstraints="NO" id="FAm-u5-Sap">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exhale2" translatesAutoresizingMaskIntoConstraints="NO" id="FAm-u5-Sap">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="FAm-u5-Sap" secondAttribute="height" multiplier="107:43" id="WFc-KM-Lxp"/>
@@ -708,8 +708,8 @@ As you breathe, pay attention to the words in the circle and repeat them in your
     <resources>
         <image name="BackBtn" width="41" height="43"/>
         <image name="BackBtnToMenu2" width="239" height="33"/>
-        <image name="Exhale" width="86" height="69"/>
-        <image name="Inhale" width="86" height="69"/>
+        <image name="Exhale2" width="88" height="70"/>
+        <image name="Inhale2" width="88" height="70"/>
         <image name="InhaleRound" width="420" height="432"/>
         <image name="OrangeCircle" width="510" height="525"/>
         <image name="OuterRound" width="170" height="175"/>

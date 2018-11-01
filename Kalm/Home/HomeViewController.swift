@@ -41,6 +41,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //IGNORE LIST
         startButton.accessibilityIgnoresInvertColors = true
         readyShapeOutlet.accessibilityIgnoresInvertColors = true
+        
         //AccesibilityTrait
         readyShapeOutlet.accessibilityLabel = "Breathe indicator, Ready"
         readyShapeOutlet.accessibilityTraits = UIAccessibilityTraitImage
