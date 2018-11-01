@@ -21,7 +21,6 @@ class GraphViewController: UIViewController {
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
-        
         // Preparing the custom back button
         let btn = UIButton(type: .custom)
         btn.setImage(UIImage(named: "BackBtn"), for: .normal)

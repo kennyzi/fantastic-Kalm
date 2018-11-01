@@ -60,6 +60,7 @@
 		BAF4325920C8E74300521B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325820C8E74200521B56 /* Assets.xcassets */; };
 		BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */; };
 		BAF4325E20C8ED5D00521B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4325C20C8ED5D00521B56 /* LaunchScreen.storyboard */; };
+		CD17172C218B04CE00D28855 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD17172B218B04CE00D28855 /* SpinnerView.swift */; };
 		CD21FCA62180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA72180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
@@ -191,6 +192,7 @@
 		BAF4325A20C8E93500521B56 /* ShowSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreenViewController.swift; sourceTree = "<group>"; };
 		BAF4325D20C8ED5D00521B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD17172B218B04CE00D28855 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		CD21FCA52180663600372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
 		CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalmWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 			children = (
 				66FA1279218070B00003A492 /* Kalm.entitlements */,
 				1111713F20DBAEE5003065AF /* Helper */,
+				CD17172A218B046A00D28855 /* Animation */,
 				BA4DB09B20DCCF12004199AB /* Graph */,
 				BA4DB09A20DCCF06004199AB /* Info */,
 				BA4DB09920DCCDF0004199AB /* Introduction */,
@@ -452,6 +455,14 @@
 				BA94142520C7DEA600BA7D54 /* RobotoCondensed-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CD17172A218B046A00D28855 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				CD17172B218B04CE00D28855 /* SpinnerView.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		CD21FC9A21805E9F00372314 /* Music */ = {
@@ -788,6 +799,7 @@
 				6647169B21805B2300D8154B /* Session.swift in Sources */,
 				BA5999C820C8C5A5003D1830 /* GraphViewController.swift in Sources */,
 				BA5999D720C8E057003D1830 /* SwipeController.swift in Sources */,
+				CD17172C218B04CE00D28855 /* SpinnerView.swift in Sources */,
 				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
 				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
 				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,

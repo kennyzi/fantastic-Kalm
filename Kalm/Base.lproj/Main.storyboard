@@ -72,22 +72,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-P0-asi">
-                                                    <rect key="frame" x="10" y="0.0" width="323" height="43.666666666666664"/>
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="43.666666666666664"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="43.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
-                                                            <rect key="frame" x="107.66666666666666" y="0.0" width="107.66666666666666" height="43.666666666666664"/>
+                                                            <rect key="frame" x="118.33333333333334" y="0.0" width="118.33333333333334" height="43.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
-                                                            <rect key="frame" x="215.33333333333334" y="0.0" width="107.66666666666666" height="43.666666666666664"/>
+                                                            <rect key="frame" x="236.66666666666666" y="0.0" width="118.33333333333334" height="43.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -115,23 +115,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-h3-KXa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="s6X-n4-aaI" firstAttribute="top" secondItem="Bc6-Fg-Q0j" secondAttribute="top" id="3Cl-Em-l2v"/>
                             <constraint firstItem="c5D-BN-DZA" firstAttribute="bottom" secondItem="s6X-n4-aaI" secondAttribute="bottom" id="Gcv-4j-jCL"/>
+                            <constraint firstItem="c5D-BN-DZA" firstAttribute="bottom" secondItem="dUI-h3-KXa" secondAttribute="bottom" id="Pwz-ID-pch"/>
+                            <constraint firstItem="dUI-h3-KXa" firstAttribute="top" secondItem="c5D-BN-DZA" secondAttribute="top" id="WCw-N5-Q5u"/>
                             <constraint firstItem="c5D-BN-DZA" firstAttribute="trailing" secondItem="s6X-n4-aaI" secondAttribute="trailing" id="XOd-WK-xSe"/>
+                            <constraint firstItem="c5D-BN-DZA" firstAttribute="trailing" secondItem="dUI-h3-KXa" secondAttribute="trailing" id="Zal-b1-TEg"/>
+                            <constraint firstItem="dUI-h3-KXa" firstAttribute="leading" secondItem="c5D-BN-DZA" secondAttribute="leading" id="ffI-qB-CcS"/>
                             <constraint firstItem="s6X-n4-aaI" firstAttribute="leading" secondItem="c5D-BN-DZA" secondAttribute="leading" id="mlN-IA-kpW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c5D-BN-DZA"/>
                     </view>
                     <connections>
+                        <outlet property="loadingView" destination="dUI-h3-KXa" id="MHU-Yo-zFs"/>
                         <outlet property="tableView" destination="s6X-n4-aaI" id="c8w-Br-C4w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQX-IR-VuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093.5999999999999" y="-525.3694581280788"/>
+            <point key="canvasLocation" x="3001" y="-420"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="XbE-f3-5Rf">
@@ -637,10 +645,10 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-XQ-eCi">
-                                <rect key="frame" x="0.0" y="-2" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="-46" width="375" height="856"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-tY-dfS">
-                                <rect key="frame" x="0.0" y="88" width="375" height="722"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="766"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>

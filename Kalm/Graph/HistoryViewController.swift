@@ -17,6 +17,7 @@ class HistoryViewController : UIViewController{
     let loadingAlert = UIAlertController(title: "Loading", message: "your conntent is beenig loaded", preferredStyle: UIAlertController.Style.alert)
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
@@ -37,7 +38,9 @@ class HistoryViewController : UIViewController{
 //                self.tableView.reloadData()
 //            }
 //        }
-        
+         let screenSize: CGRect = UIScreen.main.bounds
+        let myView = SpinnerView(frame: CGRect(x: screenSize.width/2, y: screenSize.height/2, width: 100, height: 100))
+        self.loadingView.addSubview(myView)
         tableView.topAnchor.constraint(equalTo: (self.navigationController?.navigationBar.bottomAnchor)!, constant: 0)
         
         
@@ -59,7 +62,7 @@ class HistoryViewController : UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         print(sessions)
-        present(loadingAlert,animated: true , completion: nil)
+//        present(loadingAlert,animated: true , completion: nil)
         tableView.reloadData()
     }
   
@@ -139,8 +142,10 @@ extension HistoryViewController : UITableViewDataSource, UITableViewDelegate{
         
         cell.timeLabel.accessibilityLabel = "on \(timeFormater.string(from: startDate))"
         
-        loadingAlert.dismiss(animated: true, completion: nil)
+//        loadingAlert.dismiss(animated: true, completion: nil)
+        loadingView.isHidden = true
         return cell
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
