@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,7 +63,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s6X-n4-aaI">
                                 <rect key="frame" x="16" y="44" width="343" height="696"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="ztE-3b-ciN" customClass="HistoryDetailTableViewCell" customModule="Kalm" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
@@ -72,52 +72,45 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
-                                                    <rect key="frame" x="5" y="0.0" width="45.666666666666664" height="43.666666666666664"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-P0-asi">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="43.666666666666664"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
+                                                            <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43.666666666666664"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
+                                                            <rect key="frame" x="107.66666666666666" y="0.0" width="107.66666666666666" height="43.666666666666664"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
+                                                            <rect key="frame" x="215.33333333333334" y="0.0" width="107.66666666666666" height="43.666666666666664"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="43.666666666666664" id="xch-O5-h3b"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="adt-4U-cZV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
-                                                    <rect key="frame" x="292.33333333333331" y="0.0" width="45.666666666666686" height="43.666666666666664"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="43.666666666666664" id="YIV-BG-rpS"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
-                                                    <rect key="frame" x="150.66666666666666" y="0.0" width="41.666666666666657" height="43.666666666666664"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="43.666666666666664" id="BVs-iZ-7fH"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TC1-Fr-g7T" firstAttribute="top" secondItem="Vkr-Ou-JYF" secondAttribute="top" id="0cV-Wp-eks"/>
-                                                <constraint firstAttribute="bottom" secondItem="tZk-qh-FkP" secondAttribute="bottom" id="3uL-8E-wXi"/>
-                                                <constraint firstAttribute="bottom" secondItem="ujr-Rm-iEy" secondAttribute="bottom" id="F89-lU-JSt"/>
-                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="top" secondItem="Vkr-Ou-JYF" secondAttribute="top" id="U8y-xA-JMi"/>
-                                                <constraint firstItem="tZk-qh-FkP" firstAttribute="top" secondItem="Vkr-Ou-JYF" secondAttribute="top" id="YU2-sZ-3Vn"/>
-                                                <constraint firstItem="tZk-qh-FkP" firstAttribute="leading" secondItem="Vkr-Ou-JYF" secondAttribute="leading" constant="5" id="cZ8-Kt-SNx"/>
-                                                <constraint firstAttribute="trailing" secondItem="TC1-Fr-g7T" secondAttribute="trailing" constant="5" id="g4P-hC-G0Y"/>
-                                                <constraint firstItem="TC1-Fr-g7T" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ujr-Rm-iEy" secondAttribute="trailing" constant="100" id="r4E-Tv-OGa"/>
-                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="centerX" secondItem="Vkr-Ou-JYF" secondAttribute="centerX" id="vSa-SB-4Jr"/>
-                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="centerY" secondItem="Vkr-Ou-JYF" secondAttribute="centerY" id="vch-9D-fo8"/>
-                                                <constraint firstAttribute="bottom" secondItem="TC1-Fr-g7T" secondAttribute="bottom" id="vgD-FH-xMJ"/>
-                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tZk-qh-FkP" secondAttribute="trailing" constant="100" id="zIS-Qv-tQ3"/>
+                                                <constraint firstAttribute="bottom" secondItem="ux4-P0-asi" secondAttribute="bottom" id="FHt-YS-dVL"/>
+                                                <constraint firstItem="ux4-P0-asi" firstAttribute="top" secondItem="Vkr-Ou-JYF" secondAttribute="top" id="MfB-FJ-lhy"/>
+                                                <constraint firstAttribute="trailing" secondItem="ux4-P0-asi" secondAttribute="trailing" constant="10" id="QZ3-2u-pJe"/>
+                                                <constraint firstItem="ux4-P0-asi" firstAttribute="leading" secondItem="Vkr-Ou-JYF" secondAttribute="leading" constant="10" id="hpN-v4-Yef"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="TC1-Fr-g7T" id="7Hy-WF-7o8"/>
                                             <outlet property="durationLabel" destination="tZk-qh-FkP" id="Jed-mn-MMt"/>
+                                            <outlet property="stackView" destination="ux4-P0-asi" id="A8n-wM-b9f"/>
                                             <outlet property="timeLabel" destination="ujr-Rm-iEy" id="Z7y-aI-Suz"/>
                                         </connections>
                                     </tableViewCell>
@@ -357,7 +350,7 @@
 
 As you breathe, pay attention to the words in the circle and repeat them in your mind</string>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                <color key="textColor" red="0.61176470588235299" green="0.78431372549019607" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.792156862745098" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -433,7 +426,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1Zd-9p-kdO" secondAttribute="height" multiplier="241:38" id="g21-pL-xLT"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="StopBtn2"/>
+                                <state key="normal" title="Button" image="StopBtn"/>
                                 <connections>
                                     <action selector="stopButtonPressed" destination="8Ip-31-umy" eventType="touchUpInside" id="spZ-JN-6hg"/>
                                 </connections>
@@ -441,7 +434,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reb-NX-VGY">
                                 <rect key="frame" x="0.0" y="382.66666666666669" width="375" height="47"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="35"/>
-                                <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.792156862745098" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OuterRound" translatesAutoresizingMaskIntoConstraints="NO" id="y2H-kU-mVH" userLabel="OuterRound">
@@ -514,13 +507,13 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished your breathing session" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N56-qv-c2w">
                                 <rect key="frame" x="50" y="316" width="274" height="45"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.4941176471" green="0.79215686269999996" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDE-HM-9Qk">
                                 <rect key="frame" x="0.0" y="383" width="375" height="46.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="35"/>
-                                <color key="textColor" red="0.61176470589999998" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.4941176471" green="0.79215686269999996" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njb-lg-MKA" userLabel="Back to main menu button">
@@ -528,7 +521,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Njb-lg-MKA" secondAttribute="height" multiplier="241:38" id="CnC-z9-ztT"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="BackBtnToMenu2"/>
+                                <state key="normal" title="Button" image="BackBtnToMenu"/>
                                 <connections>
                                     <action selector="backToMainMenuButtonPressed" destination="fJl-5U-XQv" eventType="touchUpInside" id="lar-MF-a8M"/>
                                 </connections>
@@ -714,7 +707,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
     </scenes>
     <resources>
         <image name="BackBtn" width="41" height="43"/>
-        <image name="BackBtnToMenu2" width="239" height="33"/>
+        <image name="BackBtnToMenu" width="239" height="33"/>
         <image name="Exhale" width="86" height="69"/>
         <image name="Inhale" width="86" height="69"/>
         <image name="InhaleRound" width="420" height="432"/>
@@ -722,7 +715,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
         <image name="OuterRound" width="170" height="175"/>
         <image name="ReadyShape" width="510" height="525"/>
         <image name="StartBtn" width="714" height="99"/>
-        <image name="StopBtn2" width="239" height="33"/>
+        <image name="StopBtn" width="717" height="99"/>
         <image name="Wallpaper" width="1125" height="2430"/>
     </resources>
     <inferredMetricsTieBreakers>
