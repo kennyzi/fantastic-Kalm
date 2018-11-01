@@ -72,38 +72,40 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-m9-V6G">
-                                                    <rect key="frame" x="15" y="11.666666666666671" width="313" height="20.333333333333329"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="20.333333333333332"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
-                                                            <rect key="frame" x="135.66666666666666" y="0.0" width="41.666666666666657" height="20.333333333333332"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
-                                                            <rect key="frame" x="271.33333333333331" y="0.0" width="41.666666666666686" height="20.333333333333332"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
+                                                    <rect key="frame" x="10" y="11" width="42.666666666666664" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
+                                                    <rect key="frame" x="150.66666666666666" y="11" width="42" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="TC1-Fr-g7T" secondAttribute="trailing" id="Igg-FV-3oz"/>
-                                                        <constraint firstItem="tZk-qh-FkP" firstAttribute="leading" secondItem="xH7-m9-V6G" secondAttribute="leading" id="ScL-J8-8hP"/>
+                                                        <constraint firstAttribute="width" constant="42" id="NOO-7H-8Pb"/>
+                                                        <constraint firstAttribute="height" constant="20" id="SrT-IA-bcG"/>
                                                     </constraints>
-                                                </stackView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
+                                                    <rect key="frame" x="276.33333333333331" y="11" width="41.666666666666686" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xH7-m9-V6G" firstAttribute="centerY" secondItem="Vkr-Ou-JYF" secondAttribute="centerY" id="RwI-J7-Aap"/>
-                                                <constraint firstItem="xH7-m9-V6G" firstAttribute="leading" secondItem="Vkr-Ou-JYF" secondAttribute="leadingMargin" id="gle-O6-RFH"/>
-                                                <constraint firstItem="xH7-m9-V6G" firstAttribute="trailing" secondItem="Vkr-Ou-JYF" secondAttribute="trailingMargin" id="ytV-OK-R6V"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="baseline" secondItem="TC1-Fr-g7T" secondAttribute="baseline" id="7Ja-WS-0Xb"/>
+                                                <constraint firstItem="TC1-Fr-g7T" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ujr-Rm-iEy" secondAttribute="trailing" constant="85" id="7eX-kB-6N8"/>
+                                                <constraint firstItem="tZk-qh-FkP" firstAttribute="leading" secondItem="Vkr-Ou-JYF" secondAttribute="leading" constant="10" id="8oj-Gs-hnd"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="firstBaseline" secondItem="TC1-Fr-g7T" secondAttribute="firstBaseline" id="EgA-9j-lXh"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="baseline" secondItem="tZk-qh-FkP" secondAttribute="baseline" id="bhX-Gn-roE"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="centerX" secondItem="Vkr-Ou-JYF" secondAttribute="centerX" id="eoZ-w8-lew"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="firstBaseline" secondItem="tZk-qh-FkP" secondAttribute="firstBaseline" id="hq7-ux-2sO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TC1-Fr-g7T" secondAttribute="trailing" constant="10" id="jnO-Vl-UgW"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="top" secondItem="Vkr-Ou-JYF" secondAttribute="topMargin" id="tgv-WB-PdU"/>
+                                                <constraint firstItem="ujr-Rm-iEy" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tZk-qh-FkP" secondAttribute="trailing" constant="98" id="yp4-CF-TIb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -564,9 +566,11 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                         <viewLayoutGuide key="safeArea" id="HkX-ux-UiG"/>
                     </view>
                     <connections>
+                        <outlet property="backToMainMenuOutlet" destination="Njb-lg-MKA" id="DPv-Kb-Oxv"/>
                         <outlet property="backtoMainMenuButton" destination="Njb-lg-MKA" id="hAN-38-ara"/>
                         <outlet property="doneLabel" destination="Cwu-jh-nw4" id="qSG-k7-zOZ"/>
                         <outlet property="durationLabel" destination="JOY-j3-Y4z" id="R08-Mu-tKr"/>
+                        <outlet property="orangeCircle" destination="Li5-9t-ENI" id="Hr6-OL-QCA"/>
                         <outlet property="timerLabel" destination="wDE-HM-9Qk" id="2Ke-iL-sJ5"/>
                         <segue destination="6cX-uh-DVp" kind="show" identifier="doneBreathingToHome" id="oeQ-1E-voe"/>
                     </connections>
@@ -715,6 +719,6 @@ As you breathe, pay attention to the words in the circle and repeat them in your
         <image name="Wallpaper" width="1125" height="2430"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oeQ-1E-voe"/>
+        <segue reference="fkM-hG-zk5"/>
     </inferredMetricsTieBreakers>
 </document>
