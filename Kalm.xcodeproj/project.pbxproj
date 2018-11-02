@@ -66,6 +66,7 @@
 		CD21FCA62180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA72180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
+		CDB0C141218C4E140047FD12 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0C140218C4E130047FD12 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,7 @@
 		CD17172B218B04CE00D28855 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		CD21FCA52180663600372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
 		CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalmWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDB0C140218C4E130047FD12 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -482,6 +484,7 @@
 		CDB09C412183002400C4F8D0 /* Network Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CDB0C140218C4E130047FD12 /* NetworkHelper.swift */,
 				CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */,
 			);
 			path = "Network Helper";
@@ -810,6 +813,7 @@
 				CD17172C218B04CE00D28855 /* SpinnerView.swift in Sources */,
 				BADBD93720C77B3200AFD9D2 /* DoneBreathingViewController.swift in Sources */,
 				BAD09C4020E242760066BD89 /* ChartSeries.swift in Sources */,
+				CDB0C141218C4E140047FD12 /* NetworkHelper.swift in Sources */,
 				BAD09C4220E242760066BD89 /* Chart.swift in Sources */,
 				BAD09C7B20E2B78B0066BD89 /* ExpandableHeaderView.swift in Sources */,
 				BAD09C7820E2B4990066BD89 /* InfoViewController.swift in Sources */,

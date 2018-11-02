@@ -45,15 +45,8 @@ class HistoryViewController : UIViewController{
         
         self.navigationItem.title = "Session History"
         self.navigationController?.navigationBar.backItem?.accessibilityLabel = "Back"
-        
-        DispatchQueue.global().sync {
-            cloudKitHelper.fetchStoryRecord(handler: { (sessions) in
-                self.sessions = sessions
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            })
-        }
+        // fetch data
+        fetchStoryFromCloudKit()
         
         print(sessions)
         
@@ -66,6 +59,42 @@ class HistoryViewController : UIViewController{
         print(sessions)
 //        present(loadingAlert,animated: true , completion: nil)
         tableView.reloadData()
+    }
+    func fetchStoryFromCloudKit(){
+        NotificationCenter.default.addObserver(self, selector: #selector(HistoryViewController.networkStatusChange(_:)), name: NSNotification.Name(ReachabilityStatusChangedNotification), object: nil)
+        NetworkHelper().monitorReachabilityChanges()
+    }
+    @objc func networkStatusChange(_ notifation: NSNotification){
+        let status = NetworkHelper().connectionStatus()
+        print(status)
+        
+        switch status {
+        case .offline:
+            let offlineAlert = UIAlertController(title: "Warning", message: "you don't heve internet connection", preferredStyle: UIAlertController.Style.alert)
+            offlineAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(offlineAlert, animated: true, completion: nil)
+        case .online(.wwan), .unknown:
+            let unstableAlert = UIAlertController(title: "Warning", message: "you don't heve stable internet connection", preferredStyle: UIAlertController.Style.alert)
+            unstableAlert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (progress) in
+                DispatchQueue.global().sync {
+                    self.fetchData()
+                }
+            }))
+            self.present(unstableAlert, animated: true, completion: nil)
+        case .online(.wiFi):
+            DispatchQueue.global().sync {
+                self.fetchData()
+                
+            }
+        }
+    }
+    func fetchData(){
+            cloudKitHelper.fetchStoryRecord(handler: { (sessions) in
+                self.sessions = sessions
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
     }
   
 }
