@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,7 @@
             <objects>
                 <viewController id="QAM-ka-Vn3" customClass="GraphViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuH-5J-i0X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDi-yG-R0S" userLabel="Back Button">
@@ -54,41 +54,41 @@
             <objects>
                 <viewController id="pF2-R0-9Cy" customClass="HistoryViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bc6-Fg-Q0j">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="yTK-2X-E6P">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <variation key="heightClass=regular-widthClass=regular" image="iPadWallpaper"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s6X-n4-aaI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="ztE-3b-ciN" customClass="HistoryDetailTableViewCell" customModule="Kalm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztE-3b-ciN" id="Vkr-Ou-JYF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-P0-asi">
-                                                    <rect key="frame" x="10" y="0.0" width="814" height="43.666666666666664"/>
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="43.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-qh-FkP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="271.33333333333331" height="43.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-Rm-iEy">
-                                                            <rect key="frame" x="271.33333333333337" y="0.0" width="271.33333333333337" height="43.666666666666664"/>
+                                                            <rect key="frame" x="118.5" y="0.0" width="118" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Fr-g7T">
-                                                            <rect key="frame" x="542.66666666666663" y="0.0" width="271.33333333333337" height="43.666666666666664"/>
+                                                            <rect key="frame" x="236.5" y="0.0" width="118.5" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-h3-KXa">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="1346"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,24 +151,24 @@
             <objects>
                 <viewController storyboardIdentifier="mainVC" id="Dq7-L5-ans" customClass="HomeViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAb-n5-M05">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="qya-VN-A9I">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="631" height="1366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qya-VN-A9I" secondAttribute="height" multiplier="375:812" id="emT-Tf-5jH"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" image="iPadWallpaper"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReadyShape" translatesAutoresizingMaskIntoConstraints="NO" id="XWb-yw-sxI">
-                                <rect key="frame" x="123" y="185" width="128" height="131"/>
+                                <rect key="frame" x="250" y="68" width="524" height="536.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XWb-yw-sxI" secondAttribute="height" multiplier="128:131" id="uJ8-si-hNG"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywd-yV-HtU" userLabel="Start Button">
-                                <rect key="frame" x="67" y="553.66666666666663" width="241" height="38"/>
+                                <rect key="frame" x="167" y="797.5" width="690" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ywd-yV-HtU" secondAttribute="height" multiplier="241:38" id="bZn-5u-i4p"/>
                                 </constraints>
@@ -178,31 +178,31 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z3a-uj-zxN" userLabel="Second Stack View">
-                                <rect key="frame" x="40" y="621.66666666666663" width="294" height="156.33333333333337"/>
+                                <rect key="frame" x="140" y="936.5" width="743" height="395.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-ih-Cd4" userLabel="Inhale View">
-                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="156.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="71" width="174" height="253"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2tS-pu-aq1" userLabel="Inhale Stack View">
-                                                <rect key="frame" x="0.0" y="19.999999999999993" width="107.66666666666667" height="112.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="20" width="174" height="139"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhale2" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-AY-n52">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="cAV-AY-n52" secondAttribute="height" multiplier="107:43" id="047-lx-yy4"/>
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1LD-ZE-0wp" userLabel="Inhale Label">
-                                                        <rect key="frame" x="0.0" y="67" width="107.66666666666667" height="45.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="94" width="174" height="45"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nsec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-YE-lAP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="22.666666666666668"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="174" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                                 <color key="textColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Inhale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlJ-xX-eea">
-                                                                <rect key="frame" x="0.0" y="22.666666666666742" width="107.66666666666667" height="22.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="174" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                                 <color key="textColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
@@ -212,7 +212,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55B-GQ-2ci">
-                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="156.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="253"/>
                                                 <connections>
                                                     <action selector="leftChangeDurationButtonPressed" destination="Dq7-L5-ans" eventType="touchUpInside" id="0OE-3W-XMe"/>
                                                 </connections>
@@ -230,35 +230,35 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46N-Oc-cWd">
-                                        <rect key="frame" x="146" y="21.999999999999993" width="2" height="112.33333333333331"/>
+                                        <rect key="frame" x="370.5" y="22" width="2" height="351.5"/>
                                         <color key="backgroundColor" red="0.78094172477722168" green="0.8539499044418335" blue="0.89805406332015991" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="cwa-Xm-DrU"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqj-DK-a8s" userLabel="Exhale View">
-                                        <rect key="frame" x="186.33333333333334" y="0.0" width="107.66666666666666" height="156.33333333333334"/>
+                                        <rect key="frame" x="569" y="71" width="174" height="253"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tzd-iK-EmI" userLabel="Exhale Stack View">
-                                                <rect key="frame" x="0.0" y="19.999999999999993" width="107.66666666666667" height="112.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="20" width="174" height="139"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exhale2" translatesAutoresizingMaskIntoConstraints="NO" id="FAm-u5-Sap">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="FAm-u5-Sap" secondAttribute="height" multiplier="107:43" id="WFc-KM-Lxp"/>
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v8T-Mm-hjX" userLabel="Exhale Label">
-                                                        <rect key="frame" x="0.0" y="67" width="107.66666666666667" height="45.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="94" width="174" height="45"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="nsec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCM-hY-kc1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="22.666666666666668"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="174" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                                 <color key="textColor" red="0.65098039220000004" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7D-Bw-cZq">
-                                                                <rect key="frame" x="0.0" y="22.666666666666742" width="107.66666666666667" height="22.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="174" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                                 <color key="textColor" red="0.65098039220000004" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
@@ -268,7 +268,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1X-8i-miT">
-                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="156.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="253"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <connections>
                                                     <action selector="rightChangeDurationButtonPressed" destination="Dq7-L5-ans" eventType="touchUpInside" id="AF6-pd-qJ5"/>
@@ -293,7 +293,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqz-Ix-Eys">
-                                <rect key="frame" x="16" y="361" width="343" height="90"/>
+                                <rect key="frame" x="16" y="649.5" width="992" height="67.5"/>
                                 <string key="text">Breathe using your stomach.
 
 As you breathe, pay attention to the words in the circle and repeat them in your mind</string>
@@ -302,14 +302,14 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-OV-0Z3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="1296"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tii-W4-rzd">
-                                <rect key="frame" x="0.0" y="812" width="375" height="290"/>
+                                <rect key="frame" x="0.0" y="1366" width="1024" height="290"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-Sb-QaL">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="185"/>
+                                        <rect key="frame" x="0.0" y="44" width="1024" height="185"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.97386676073074341" green="0.63596624135971069" blue="0.46448743343353271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -322,13 +322,13 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <toolbar clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqt-rG-uGC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" red="0.97386676073074341" green="0.63596624135971069" blue="0.46448743343353271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <items>
                                             <barButtonItem style="plain" id="Rgw-sw-z3o">
                                                 <view key="customView" contentMode="scaleToFill" id="0oo-B3-MLd">
-                                                    <rect key="frame" x="16" y="5.6666666666666679" width="61" height="33"/>
+                                                    <rect key="frame" x="20" y="5.5" width="61" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxx-0r-fnJ">
@@ -346,7 +346,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                             <barButtonItem systemItem="flexibleSpace" id="lVO-gs-pK7"/>
                                             <barButtonItem style="plain" id="DaG-Z7-xKD">
                                                 <view key="customView" contentMode="scaleToFill" id="ujk-gF-nvB">
-                                                    <rect key="frame" x="304" y="5.6666666666666679" width="55" height="33"/>
+                                                    <rect key="frame" x="949" y="5.5" width="55" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-3z-oRX">
@@ -368,7 +368,6 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.63529411764705879" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="UhT-LN-mog"/>
                                     <constraint firstAttribute="height" constant="290" id="yXd-Xn-ad7"/>
                                 </constraints>
                             </view>
@@ -379,34 +378,41 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                             <constraint firstItem="Z3a-uj-zxN" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" constant="40" id="1kE-3A-vIS">
                                 <variation key="heightClass=regular-widthClass=regular" constant="140"/>
                             </constraint>
-                            <constraint firstAttribute="trailing" secondItem="OJt-OV-0Z3" secondAttribute="trailing" id="5FJ-NV-sTa"/>
-                            <constraint firstItem="OJt-OV-0Z3" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" id="70c-k4-s8i"/>
+                            <constraint firstItem="tii-W4-rzd" firstAttribute="width" secondItem="aAb-n5-M05" secondAttribute="width" id="49r-3m-zk5"/>
                             <constraint firstItem="ywd-yV-HtU" firstAttribute="leading" secondItem="vXT-hy-uZc" secondAttribute="leading" constant="67" id="7Y9-QB-nm6">
                                 <variation key="heightClass=regular-widthClass=regular" constant="167"/>
                             </constraint>
                             <constraint firstItem="Rqz-Ix-Eys" firstAttribute="top" secondItem="XWb-yw-sxI" secondAttribute="bottom" constant="45" id="83k-Cd-Zc4"/>
-                            <constraint firstItem="OJt-OV-0Z3" firstAttribute="bottom" secondItem="aAb-n5-M05" secondAttribute="bottom" id="FyB-0G-NdD"/>
-                            <constraint firstAttribute="top" secondItem="OJt-OV-0Z3" secondAttribute="top" id="J0h-hz-Mxg"/>
+                            <constraint firstItem="tii-W4-rzd" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" id="8xM-xs-f13"/>
+                            <constraint firstItem="tii-W4-rzd" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" id="Bvd-7Y-wps"/>
                             <constraint firstItem="vXT-hy-uZc" firstAttribute="trailing" secondItem="ywd-yV-HtU" secondAttribute="trailing" constant="67" id="Knj-rZ-Ts8">
                                 <variation key="heightClass=regular-widthClass=regular" constant="167"/>
                             </constraint>
+                            <constraint firstAttribute="trailing" secondItem="tii-W4-rzd" secondAttribute="trailing" id="Kta-dp-apb"/>
                             <constraint firstItem="qya-VN-A9I" firstAttribute="bottom" secondItem="aAb-n5-M05" secondAttribute="bottom" id="MID-8H-o8z"/>
                             <constraint firstItem="vXT-hy-uZc" firstAttribute="trailing" secondItem="Rqz-Ix-Eys" secondAttribute="trailing" constant="16" id="R86-4Y-B64"/>
                             <constraint firstItem="vXT-hy-uZc" firstAttribute="trailing" secondItem="XWb-yw-sxI" secondAttribute="trailing" constant="124" id="Tra-Lp-P5e">
                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
                             <constraint firstItem="Rqz-Ix-Eys" firstAttribute="leading" secondItem="vXT-hy-uZc" secondAttribute="leading" constant="16" id="WIX-dM-mLe"/>
+                            <constraint firstItem="OJt-OV-0Z3" firstAttribute="trailing" secondItem="vXT-hy-uZc" secondAttribute="trailing" id="bCP-LX-JaF"/>
+                            <constraint firstItem="tii-W4-rzd" firstAttribute="top" secondItem="OJt-OV-0Z3" secondAttribute="bottom" id="bCf-Ot-sq5"/>
                             <constraint firstItem="Z3a-uj-zxN" firstAttribute="bottom" secondItem="aAb-n5-M05" secondAttribute="bottom" constant="-34" id="bWW-I4-xj9"/>
                             <constraint firstItem="qya-VN-A9I" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" id="dBv-8M-lcg"/>
                             <constraint firstItem="Rqz-Ix-Eys" firstAttribute="centerY" secondItem="aAb-n5-M05" secondAttribute="centerY" id="ePk-zb-9Xk"/>
                             <constraint firstItem="tii-W4-rzd" firstAttribute="top" secondItem="aAb-n5-M05" secondAttribute="bottom" id="hU2-UI-2ZE"/>
+                            <constraint firstAttribute="trailing" secondItem="tii-W4-rzd" secondAttribute="trailing" id="lcd-6Z-SXY"/>
                             <constraint firstItem="Rqz-Ix-Eys" firstAttribute="centerX" secondItem="aAb-n5-M05" secondAttribute="centerX" id="mot-ao-xL8"/>
                             <constraint firstItem="qya-VN-A9I" firstAttribute="trailing" secondItem="aAb-n5-M05" secondAttribute="trailing" id="oLQ-Kh-fms"/>
+                            <constraint firstAttribute="trailing" secondItem="tii-W4-rzd" secondAttribute="trailing" id="pdT-TK-D2B"/>
                             <constraint firstItem="Z3a-uj-zxN" firstAttribute="top" secondItem="ywd-yV-HtU" secondAttribute="bottom" constant="30" id="qCu-DI-TZ3"/>
+                            <constraint firstItem="OJt-OV-0Z3" firstAttribute="leading" secondItem="vXT-hy-uZc" secondAttribute="leading" id="rih-Td-z3I"/>
                             <constraint firstAttribute="trailing" secondItem="Z3a-uj-zxN" secondAttribute="trailing" constant="41" id="sKC-Mt-Clg">
                                 <variation key="heightClass=regular-widthClass=regular" constant="141"/>
                             </constraint>
                             <constraint firstItem="tii-W4-rzd" firstAttribute="centerX" secondItem="vXT-hy-uZc" secondAttribute="centerX" id="tEb-3l-pe1"/>
+                            <constraint firstItem="OJt-OV-0Z3" firstAttribute="top" secondItem="vXT-hy-uZc" secondAttribute="top" id="tbx-DN-wS2"/>
+                            <constraint firstItem="tii-W4-rzd" firstAttribute="leading" secondItem="aAb-n5-M05" secondAttribute="leading" id="tkc-ky-tMF"/>
                             <constraint firstItem="XWb-yw-sxI" firstAttribute="leading" secondItem="vXT-hy-uZc" secondAttribute="leading" constant="123" id="uOm-NZ-9s0">
                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
@@ -444,18 +450,18 @@ As you breathe, pay attention to the words in the circle and repeat them in your
             <objects>
                 <viewController id="8Ip-31-umy" customClass="BreathingViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RKy-uI-9QR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ZLH-C9-wl7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZLH-C9-wl7" secondAttribute="height" multiplier="375:812" id="yXS-P3-rEP"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" image="iPadWallpaper"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-9p-kdO">
-                                <rect key="frame" x="67" y="537.66666666666663" width="241" height="38"/>
+                                <rect key="frame" x="0.0" y="815" width="1024" height="161.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1Zd-9p-kdO" secondAttribute="height" multiplier="241:38" id="g21-pL-xLT"/>
                                 </constraints>
@@ -465,19 +471,19 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reb-NX-VGY">
-                                <rect key="frame" x="0.0" y="382.66666666666669" width="375" height="47"/>
+                                <rect key="frame" x="0.0" y="659.5" width="1024" height="47"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="35"/>
                                 <color key="textColor" red="0.33725490200000002" green="0.71372549019999998" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InhaleRound" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-jP-8pL" userLabel="InnerRound">
-                                <rect key="frame" x="123" y="172.66666666666666" width="128" height="127.99999999999997"/>
+                                <rect key="frame" x="251" y="55" width="523" height="523"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="f0y-jP-8pL" secondAttribute="height" multiplier="1:1" id="tAS-CB-iUo"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OuterRound" translatesAutoresizingMaskIntoConstraints="NO" id="y2H-kU-mVH" userLabel="OuterRound">
-                                <rect key="frame" x="115" y="163.66666666666666" width="145" height="144.99999999999997"/>
+                                <rect key="frame" x="240" y="42" width="544" height="544"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="y2H-kU-mVH" secondAttribute="height" multiplier="1:1" id="bTg-r0-uoA"/>
                                 </constraints>
@@ -534,18 +540,18 @@ As you breathe, pay attention to the words in the circle and repeat them in your
             <objects>
                 <viewController id="fJl-5U-XQv" customClass="DoneBreathingViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F2j-PH-1EI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="F2J-Fg-Dga">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="F2J-Fg-Dga" secondAttribute="height" multiplier="375:812" id="maT-0A-QqN"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" image="iPadWallpaper"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrangeCircle" translatesAutoresizingMaskIntoConstraints="NO" id="Li5-9t-ENI">
-                                <rect key="frame" x="117" y="165" width="140" height="140"/>
+                                <rect key="frame" x="217" y="15.5" width="589" height="589"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Li5-9t-ENI" secondAttribute="height" multiplier="1:1" id="5xL-xi-aNY"/>
                                 </constraints>
@@ -557,19 +563,19 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished your breathing session" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N56-qv-c2w">
-                                <rect key="frame" x="50" y="316" width="274" height="45"/>
+                                <rect key="frame" x="50" y="615.5" width="923" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" red="0.33725490200000002" green="0.71372549019999998" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDE-HM-9Qk">
-                                <rect key="frame" x="0.0" y="383" width="375" height="46.333333333333314"/>
+                                <rect key="frame" x="0.0" y="660" width="1024" height="46.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="35"/>
                                 <color key="textColor" red="0.33725490200000002" green="0.71372549019999998" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njb-lg-MKA" userLabel="Back to main menu button">
-                                <rect key="frame" x="67" y="538" width="241" height="38"/>
+                                <rect key="frame" x="67" y="815" width="890" height="140.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Njb-lg-MKA" secondAttribute="height" multiplier="241:38" id="CnC-z9-ztT"/>
                                 </constraints>
@@ -579,7 +585,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOY-j3-Y4z">
-                                <rect key="frame" x="0.0" y="372.33333333333331" width="375" height="22.666666666666686"/>
+                                <rect key="frame" x="0.0" y="649.5" width="1024" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" red="0.4941176471" green="0.79215686269999996" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -641,7 +647,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6cX-uh-DVp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MK0-zV-UsM">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -658,7 +664,7 @@ As you breathe, pay attention to the words in the circle and repeat them in your
             <objects>
                 <collectionViewController storyboardIdentifier="swipingVC" id="Z43-RW-sFk" customClass="SwipeController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="f1F-wZ-s1a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nG0-wI-G93">
@@ -692,37 +698,37 @@ As you breathe, pay attention to the words in the circle and repeat them in your
             <objects>
                 <viewController id="L0b-aO-UfN" customClass="InfoViewController" customModule="Kalm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BOu-B1-niQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-XQ-eCi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <variation key="heightClass=regular-widthClass=regular" image="iPadWallpaper"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-tY-dfS">
-                                <rect key="frame" x="0.0" y="88" width="375" height="722"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="1328"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BRD-nf-cBY">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BRD-nf-cBY" id="Xmg-9j-0IK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" textLabel="nr3-Dg-y7X" style="IBUITableViewCellStyleDefault" id="gE8-Kx-CKe">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="80" width="1024" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gE8-Kx-CKe" id="kn3-sa-tg2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nr3-Dg-y7X">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="994" height="51.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.33725490200000002" green="0.71372549019999998" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

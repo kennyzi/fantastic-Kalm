@@ -35,6 +35,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var inhaleDuration = 3
     var exhaleDuration = 5
     var duration = ["3 sec", "4 sec", "5 sec", "6 sec", "7 sec", "8 sec"]
+    let screenSize = UIScreen.main.bounds
     
     
     // MARK: - App Life Cycle
@@ -154,8 +155,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         // Animate the bottom view
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
-            self.bottomView.frame = CGRect(x: 0.0, y: 548.0, width: 375.0, height: 265.0)
-            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: 375.0, height: 44.0)
+            self.bottomView.frame = CGRect(x: 0.0, y: ((self.screenSize.height)/3)*2, width: self.screenSize.width, height: ((self.screenSize.height)/3)*2)
+            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: self.screenSize.width, height: 44.0)
         })
         
         // Activate blur effect
@@ -172,8 +173,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBAction func rightChangeDurationButtonPressed() {
         // Animate the bottom view
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
-            self.bottomView.frame = CGRect(x: 0.0, y: 548.0, width: 375.0, height: 265.0)
-            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: 375.0, height: 44.0)
+            self.bottomView.frame = CGRect(x: 0.0, y: ((self.screenSize.height)/3)*2, width: self.screenSize.width, height: ((self.screenSize.height)/3)*2)
+            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: self.screenSize.width, height: 44.0)
         })
         
         // Activate blur effect
@@ -208,8 +209,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     // MARK: - Button Delegate for Picker View
     @IBAction func cancelButtonPressed() {
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
-            self.bottomView.frame = CGRect(x: 0.0, y: 812.0, width: 375.0, height: 0)
-            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: 375.0, height: 0)
+            self.bottomView.frame = CGRect(x: 0.0, y: self.screenSize.height, width: self.screenSize.width, height: 0)
+            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: self.screenSize.width, height: 0)
         }, completion: nil)
         
         blurView.alpha = 0.0
@@ -237,8 +238,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         leftChangeDurationButton.accessibilityLabel = "\(inhaleDuration) seconds inhale. Tap to change"
         
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
-            self.bottomView.frame = CGRect(x: 0.0, y: 812.0, width: 375.0, height: 0)
-            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: 375.0, height: 0)
+            self.bottomView.frame = CGRect(x: 0.0, y: self.screenSize.height, width: self.screenSize.width, height: 0)
+            self.toolbar.frame = CGRect(x: 0.0, y: (self.view.superview?.frame.origin.y)!, width: self.screenSize.width, height: 0)
         }, completion: nil)
         
         blurView.alpha = 0.0
