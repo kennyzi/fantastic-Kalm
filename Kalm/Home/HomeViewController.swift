@@ -151,6 +151,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @IBAction func leftChangeDurationButtonPressed() {
+        
         // Animate the bottom view
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear, animations: { () -> Void in
             self.bottomView.frame = CGRect(x: 0.0, y: 548.0, width: 375.0, height: 265.0)
