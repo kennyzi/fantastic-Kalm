@@ -28,6 +28,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var readyShapeOutlet: UIImageView!
+    @IBOutlet weak var explanationOutlet: UILabel!
     
     
     // MARK: - Variables
@@ -38,6 +39,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //dynamic text
+        explanationOutlet.font = UIFont.preferredFont(forTextStyle: .body)
+        explanationOutlet.adjustsFontForContentSizeCategory = true
         //IGNORE LIST
         startButton.accessibilityIgnoresInvertColors = true
         readyShapeOutlet.accessibilityIgnoresInvertColors = true
