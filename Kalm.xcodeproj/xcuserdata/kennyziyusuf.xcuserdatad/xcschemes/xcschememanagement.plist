@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Intents Handeler.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Intents HandelerUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Kalm.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,7 +22,7 @@
 		<key>Kalm.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>KalmWatch (Notification).xcscheme</key>
 		<dict>
@@ -22,7 +32,7 @@
 		<key>KalmWatch (Notification).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>KalmWatch.xcscheme</key>
 		<dict>
@@ -32,7 +42,40 @@
 		<key>KalmWatch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1109619D20C4CA500040CD4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>110961B120C4CA520040CD4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>110961BC20C4CA520040CD4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAD09C4420E2513A0066BD89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD8AAB42219AB5F3008423F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD8AAB4B219AB5F3008423F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -66,6 +66,12 @@
 		CD21FCA62180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA72180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
 		CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD21FCA52180663600372314 /* AmbientSound.m4a */; };
+		CD8AAB46219AB5F3008423F1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AAB45219AB5F3008423F1 /* IntentHandler.swift */; };
+		CD8AAB4E219AB5F3008423F1 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8AAB4D219AB5F3008423F1 /* IntentsUI.framework */; };
+		CD8AAB51219AB5F3008423F1 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AAB50219AB5F3008423F1 /* IntentViewController.swift */; };
+		CD8AAB54219AB5F3008423F1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AAB52219AB5F3008423F1 /* MainInterface.storyboard */; };
+		CD8AAB58219AB5F3008423F1 /* Intents HandelerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8AAB4C219AB5F3008423F1 /* Intents HandelerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD8AAB5B219AB5F3008423F1 /* Intents Handeler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8AAB43219AB5F3008423F1 /* Intents Handeler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CDB0C141218C4E140047FD12 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0C140218C4E130047FD12 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +104,20 @@
 			remoteGlobalIDString = BAD09C4420E2513A0066BD89;
 			remoteInfo = KalmWatch;
 		};
+		CD8AAB56219AB5F3008423F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8AAB4B219AB5F3008423F1;
+			remoteInfo = "Intents HandelerUI";
+		};
+		CD8AAB59219AB5F3008423F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1109619620C4CA500040CD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8AAB42219AB5F3008423F1;
+			remoteInfo = "Intents Handeler";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +141,18 @@
 				BAD09C6220E2513C0066BD89 /* KalmWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AAB62219AB5F3008423F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD8AAB5B219AB5F3008423F1 /* Intents Handeler.appex in Embed App Extensions */,
+				CD8AAB58219AB5F3008423F1 /* Intents HandelerUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -199,6 +231,14 @@
 		BF29B229C787975E1CAFFD1C /* Pods-KalmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalmTests/Pods-KalmTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD17172B218B04CE00D28855 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		CD21FCA52180663600372314 /* AmbientSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientSound.m4a; sourceTree = "<group>"; };
+		CD8AAB43219AB5F3008423F1 /* Intents Handeler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents Handeler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AAB45219AB5F3008423F1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CD8AAB47219AB5F3008423F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8AAB4C219AB5F3008423F1 /* Intents HandelerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents HandelerUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AAB4D219AB5F3008423F1 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CD8AAB50219AB5F3008423F1 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CD8AAB53219AB5F3008423F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CD8AAB55219AB5F3008423F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB09C422183004800C4F8D0 /* KalmWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalmWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDB0C140218C4E130047FD12 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +277,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD8AAB40219AB5F3008423F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AAB49219AB5F3008423F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AAB4E219AB5F3008423F1 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -248,6 +303,8 @@
 				BAD09C5520E2513C0066BD89 /* KalmWatch Extension */,
 				110961B520C4CA520040CD4B /* KalmTests */,
 				110961C020C4CA520040CD4B /* KalmUITests */,
+				CD8AAB44219AB5F3008423F1 /* Intents Handeler */,
+				CD8AAB4F219AB5F3008423F1 /* Intents HandelerUI */,
 				1109619F20C4CA500040CD4B /* Products */,
 				97F99EFE2C689ED0C9A834CA /* Pods */,
 				1E23B7F02A89834CAC25991A /* Frameworks */,
@@ -262,6 +319,8 @@
 				110961BD20C4CA520040CD4B /* KalmUITests.xctest */,
 				BAD09C4520E2513A0066BD89 /* KalmWatch.app */,
 				BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */,
+				CD8AAB43219AB5F3008423F1 /* Intents Handeler.appex */,
+				CD8AAB4C219AB5F3008423F1 /* Intents HandelerUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,6 +411,7 @@
 				44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */,
 				EABC30AA3FF1FCA36380E53D /* Pods_KalmTests.framework */,
 				985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */,
+				CD8AAB4D219AB5F3008423F1 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,6 +541,25 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		CD8AAB44219AB5F3008423F1 /* Intents Handeler */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AAB45219AB5F3008423F1 /* IntentHandler.swift */,
+				CD8AAB47219AB5F3008423F1 /* Info.plist */,
+			);
+			path = "Intents Handeler";
+			sourceTree = "<group>";
+		};
+		CD8AAB4F219AB5F3008423F1 /* Intents HandelerUI */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AAB50219AB5F3008423F1 /* IntentViewController.swift */,
+				CD8AAB52219AB5F3008423F1 /* MainInterface.storyboard */,
+				CD8AAB55219AB5F3008423F1 /* Info.plist */,
+			);
+			path = "Intents HandelerUI";
+			sourceTree = "<group>";
+		};
 		CDB09C412183002400C4F8D0 /* Network Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,11 +582,14 @@
 				1109619C20C4CA500040CD4B /* Resources */,
 				673973E370803A880A86D8E2 /* [CP] Embed Pods Frameworks */,
 				BAD09C6A20E2513C0066BD89 /* Embed Watch Content */,
+				CD8AAB62219AB5F3008423F1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BAD09C6120E2513C0066BD89 /* PBXTargetDependency */,
+				CD8AAB57219AB5F3008423F1 /* PBXTargetDependency */,
+				CD8AAB5A219AB5F3008423F1 /* PBXTargetDependency */,
 			);
 			name = Kalm;
 			productName = Kalm;
@@ -586,13 +668,47 @@
 			productReference = BAD09C5120E2513B0066BD89 /* KalmWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		CD8AAB42219AB5F3008423F1 /* Intents Handeler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8AAB5F219AB5F3008423F1 /* Build configuration list for PBXNativeTarget "Intents Handeler" */;
+			buildPhases = (
+				CD8AAB3F219AB5F3008423F1 /* Sources */,
+				CD8AAB40219AB5F3008423F1 /* Frameworks */,
+				CD8AAB41219AB5F3008423F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents Handeler";
+			productName = "Intents Handeler";
+			productReference = CD8AAB43219AB5F3008423F1 /* Intents Handeler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CD8AAB4B219AB5F3008423F1 /* Intents HandelerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8AAB5C219AB5F3008423F1 /* Build configuration list for PBXNativeTarget "Intents HandelerUI" */;
+			buildPhases = (
+				CD8AAB48219AB5F3008423F1 /* Sources */,
+				CD8AAB49219AB5F3008423F1 /* Frameworks */,
+				CD8AAB4A219AB5F3008423F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents HandelerUI";
+			productName = "Intents HandelerUI";
+			productReference = CD8AAB4C219AB5F3008423F1 /* Intents HandelerUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1109619620C4CA500040CD4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Marvin Randy";
 				TargetAttributes = {
@@ -600,6 +716,9 @@
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 							com.apple.iCloud = {
@@ -625,10 +744,19 @@
 							com.apple.Push = {
 								enabled = 1;
 							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 0;
 							};
 						};
+					};
+					CD8AAB42219AB5F3008423F1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CD8AAB4B219AB5F3008423F1 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -650,6 +778,8 @@
 				110961BC20C4CA520040CD4B /* KalmUITests */,
 				BAD09C4420E2513A0066BD89 /* KalmWatch */,
 				BAD09C5020E2513B0066BD89 /* KalmWatch Extension */,
+				CD8AAB42219AB5F3008423F1 /* Intents Handeler */,
+				CD8AAB4B219AB5F3008423F1 /* Intents HandelerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -716,6 +846,21 @@
 			files = (
 				BAD09C5D20E2513C0066BD89 /* Assets.xcassets in Resources */,
 				CD21FCA82180663600372314 /* AmbientSound.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AAB41219AB5F3008423F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AAB4A219AB5F3008423F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AAB54219AB5F3008423F1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +995,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD8AAB3F219AB5F3008423F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AAB46219AB5F3008423F1 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8AAB48219AB5F3008423F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8AAB51219AB5F3008423F1 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -872,6 +1033,16 @@
 			isa = PBXTargetDependency;
 			target = BAD09C4420E2513A0066BD89 /* KalmWatch */;
 			targetProxy = BAD09C6020E2513C0066BD89 /* PBXContainerItemProxy */;
+		};
+		CD8AAB57219AB5F3008423F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8AAB4B219AB5F3008423F1 /* Intents HandelerUI */;
+			targetProxy = CD8AAB56219AB5F3008423F1 /* PBXContainerItemProxy */;
+		};
+		CD8AAB5A219AB5F3008423F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8AAB42219AB5F3008423F1 /* Intents Handeler */;
+			targetProxy = CD8AAB59219AB5F3008423F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -898,6 +1069,14 @@
 				BAF4325D20C8ED5D00521B56 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD8AAB52219AB5F3008423F1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8AAB53219AB5F3008423F1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1021,6 +1200,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Kalm/Kalm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1042,6 +1222,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Kalm/Kalm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1244,6 +1425,92 @@
 			};
 			name = Release;
 		};
+		CD8AAB5D219AB5F3008423F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
+				INFOPLIST_FILE = "Intents HandelerUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "KalmTeam3.Kalm.Intents-HandelerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8AAB5E219AB5F3008423F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
+				INFOPLIST_FILE = "Intents HandelerUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "KalmTeam3.Kalm.Intents-HandelerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD8AAB60219AB5F3008423F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
+				INFOPLIST_FILE = "Intents Handeler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "KalmTeam3.Kalm.Intents-Handeler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8AAB61219AB5F3008423F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZHR6JDHY4;
+				INFOPLIST_FILE = "Intents Handeler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "KalmTeam3.Kalm.Intents-Handeler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1297,6 +1564,24 @@
 			buildConfigurations = (
 				BAD09C6320E2513C0066BD89 /* Debug */,
 				BAD09C6420E2513C0066BD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8AAB5C219AB5F3008423F1 /* Build configuration list for PBXNativeTarget "Intents HandelerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AAB5D219AB5F3008423F1 /* Debug */,
+				CD8AAB5E219AB5F3008423F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8AAB5F219AB5F3008423F1 /* Build configuration list for PBXNativeTarget "Intents Handeler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8AAB60219AB5F3008423F1 /* Debug */,
+				CD8AAB61219AB5F3008423F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

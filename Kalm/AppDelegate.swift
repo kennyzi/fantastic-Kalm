@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Intents
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -38,6 +38,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+            print("AppDelegate: Start Workout Intent - FALSE")
+            return false
+        }
+        print("AppDelegate: Start Workout Intent - TRUE")
+        print(intent)
+        guard let name = intent.workoutName?.spokenPhrase else {return false}
+        
+        if name == "Start Session"{
+            print("namanya bener")
+            var navigationController2 = window?.rootViewController as? UINavigationController
+            var workoutVC2 = navigationController2?.viewControllers
+            
+            print(navigationController2)
+            print(workoutVC2)
+//            guard let navigationController = window?.rootViewController as? UINavigationController,
+//                let workoutVC = navigationController.viewControllers.last as? BreathingViewController else{
+//                    print("salaahhh")
+//                    return false
+//            }
+//            workoutVC2?.append(BreathingViewController())
+//            navigationController2?.performSegue(withIdentifier: "homeToBreathing", sender: nil)
+//            navigationController2?.present(BreathingViewController(), animated: true, completion: {
+//
+//            })
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "breathing") as UIViewController
+            navigationController2?.present(initialViewController, animated: true, completion: {
+                
+            })
+            print("ngebalikin halaman breath")
+            restorationHandler([workoutVC2])
+            
+            return true
+        }else{
+            return false
+        }
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

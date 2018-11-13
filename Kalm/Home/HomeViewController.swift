@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Intents
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     // MARK: - Outlets
@@ -133,6 +133,11 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         inhaleDurationLabel.text = String(inhaleDuration) + " sec"
         exhaleDurationLabel.text = String(exhaleDuration) + " sec"
         
+        //Request Siri Authorization
+        INPreferences.requestSiriAuthorization { (status) in
+            print(status)
+        }
+        INVocabulary.shared().setVocabularyStrings(["Breath","Start Session"], of: .workoutActivityName)
         super.viewDidLoad()
     }
     
