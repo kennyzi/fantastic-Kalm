@@ -33,6 +33,22 @@ class BreathingViewController: UIViewController {
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         timeStart = Date()
+        
+        //get Inhale & Exhale Duration
+        
+        if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
+            if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
+                inhaleDuration = savedInhaleDuration
+            }
+        }
+        
+        if UserDefaults.standard.value(forKey: "exhaleDuration") != nil{
+            if let savedExhaleDuration = UserDefaults.standard.value(forKey: "exhaleDuration") as? Int{
+                exhaleDuration = savedExhaleDuration
+            }
+        }
+        
+        //
         stopButton.accessibilityIgnoresInvertColors = true
         circle.accessibilityIgnoresInvertColors = true
         innerCircle.accessibilityIgnoresInvertColors = true
