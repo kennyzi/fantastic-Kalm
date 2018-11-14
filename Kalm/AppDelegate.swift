@@ -47,8 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(intent)
         guard let name = intent.workoutName?.spokenPhrase else {return false}
         
-        for sessionName in listStartSessionName{
-            if name.contains(sessionName){
+//        for sessionName in listStartSessionName{
+            if name == "Start Session"{
                 print("namanya bener")
                 var navigationController2 = window?.rootViewController as? UINavigationController
                 var workoutVC2 = navigationController2?.viewControllers
@@ -77,8 +77,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }else{
                 return false
             }
-        }
-        return false
+//        }
+//        return false
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

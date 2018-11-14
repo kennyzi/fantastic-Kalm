@@ -31,7 +31,7 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INEndWorkoutInte
     }
     
     func resolveWorkoutName(for intent: INEndWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
-
+        resolveWorkout
     }
     func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
         
