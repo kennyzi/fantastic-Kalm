@@ -29,6 +29,10 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INEndWorkoutInte
         print(SpokenPhrase)
         completion(INStartWorkoutIntentResponse(code: .handleInApp, userActivity: userActivity))
     }
+    
+    func resolveWorkoutName(for intent: INEndWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
+
+    }
     func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
         
     }

@@ -40,6 +40,22 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
+        //Get inhaleDuration & exhaleDuration
+        
+        if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
+            if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
+                inhaleDuration = savedInhaleDuration
+            }
+        }
+        
+        if UserDefaults.standard.value(forKey: "exhaleDuration") != nil{
+            if let savedExhaleDuration = UserDefaults.standard.value(forKey: "exhaleDuration") as? Int{
+                exhaleDuration = savedExhaleDuration
+            }
+        }
+        
+        
+        
         //dynamic text
         explanationOutlet.font = UIFont.preferredFont(forTextStyle: .body)
         explanationOutlet.adjustsFontForContentSizeCategory = true
@@ -144,6 +160,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - Button Delegate
     @IBAction func startButtonPressed() {
+        
+        UserDefaults.standard.setValue(inhaleDuration, forKey: "inhaleDuration")
+        UserDefaults.standard.setValue(exhaleDuration, forKey: "exhaleDuration")
+        
         performSegue(withIdentifier: "homeToBreathing", sender: self)
     }
     
@@ -254,8 +274,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? BreathingViewController {
-            destination.inhaleDuration = inhaleDuration
-            destination.exhaleDuration = exhaleDuration
+//            destination.inhaleDuration = inhaleDuration
+//            destination.exhaleDuration = exhaleDuration
         }
     }
 }
