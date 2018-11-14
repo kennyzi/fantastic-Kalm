@@ -12,11 +12,15 @@
 		110961B720C4CA520040CD4B /* KalmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961B620C4CA520040CD4B /* KalmTests.swift */; };
 		110961C220C4CA520040CD4B /* KalmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110961C120C4CA520040CD4B /* KalmUITests.swift */; };
 		265ECF4DA1F5EF792CE6B58F /* Pods_KalmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985B9EC701EBDBB2A31AA40D /* Pods_KalmUITests.framework */; };
+		6619607A219BFC9200471F1E /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 66196079219BFC9200471F1E /* Intents.intentdefinition */; };
+		6619607B219BFFA800471F1E /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 66196079219BFC9200471F1E /* Intents.intentdefinition */; };
+		6619607C219BFFA900471F1E /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 66196079219BFC9200471F1E /* Intents.intentdefinition */; };
 		6647169B21805B2300D8154B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6647169A21805B2300D8154B /* Session.swift */; };
 		6653FE01218B07FE00DF5F11 /* exhale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6653FDFF218B07FE00DF5F11 /* exhale.mp3 */; };
 		6653FE02218B07FE00DF5F11 /* inhale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6653FE00218B07FE00DF5F11 /* inhale.mp3 */; };
 		66549D102180743800FAA423 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D0F2180743800FAA423 /* HistoryViewController.swift */; };
 		66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */; };
+		6661B320219C0B7000994274 /* StartBreathingSessionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6661B31F219C0B7000994274 /* StartBreathingSessionIntentHandler.swift */; };
 		66FA1275218060DE0003A492 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA1274218060DE0003A492 /* CloudKitHelper.swift */; };
 		66FA127B218070B40003A492 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA127A218070B40003A492 /* CloudKit.framework */; };
 		694925C700BCA9D0D7E5A3D3 /* Pods_Kalm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */; };
@@ -174,11 +178,13 @@
 		44BB16F2D348FFE2DC3886B7 /* Pods_Kalm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kalm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCB6E06EBE5AB02E141A2C2 /* Pods-Kalm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.debug.xcconfig"; sourceTree = "<group>"; };
 		59087B01D4F0447A38FD5C4A /* Pods-Kalm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kalm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kalm/Pods-Kalm.release.xcconfig"; sourceTree = "<group>"; };
+		66196079219BFC9200471F1E /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		6647169A21805B2300D8154B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		6653FDFF218B07FE00DF5F11 /* exhale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exhale.mp3; sourceTree = "<group>"; };
 		6653FE00218B07FE00DF5F11 /* inhale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inhale.mp3; sourceTree = "<group>"; };
 		66549D0F2180743800FAA423 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		66549D13218075FD00FAA423 /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		6661B31F219C0B7000994274 /* StartBreathingSessionIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBreathingSessionIntentHandler.swift; sourceTree = "<group>"; };
 		66FA1274218060DE0003A492 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		66FA127621806BF50003A492 /* KalmWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KalmWatch Extension.entitlements"; sourceTree = "<group>"; };
 		66FA1279218070B00003A492 /* Kalm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kalm.entitlements; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 		110961A020C4CA500040CD4B /* Kalm */ = {
 			isa = PBXGroup;
 			children = (
+				66196079219BFC9200471F1E /* Intents.intentdefinition */,
 				66FA1279218070B00003A492 /* Kalm.entitlements */,
 				1111713F20DBAEE5003065AF /* Helper */,
 				CD17172A218B046A00D28855 /* Animation */,
@@ -545,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				CD8AAB45219AB5F3008423F1 /* IntentHandler.swift */,
+				6661B31F219C0B7000994274 /* StartBreathingSessionIntentHandler.swift */,
 				CD8AAB47219AB5F3008423F1 /* Info.plist */,
 			);
 			path = "Intents Handeler";
@@ -946,6 +954,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6619607B219BFFA800471F1E /* Intents.intentdefinition in Sources */,
 				66549D14218075FD00FAA423 /* HistoryDetailTableViewCell.swift in Sources */,
 				BAF4325B20C8E93500521B56 /* ShowSplashScreenViewController.swift in Sources */,
 				110961A220C4CA500040CD4B /* AppDelegate.swift in Sources */,
@@ -999,6 +1008,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6661B320219C0B7000994274 /* StartBreathingSessionIntentHandler.swift in Sources */,
+				6619607A219BFC9200471F1E /* Intents.intentdefinition in Sources */,
 				CD8AAB46219AB5F3008423F1 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1007,6 +1018,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6619607C219BFFA900471F1E /* Intents.intentdefinition in Sources */,
 				CD8AAB51219AB5F3008423F1 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

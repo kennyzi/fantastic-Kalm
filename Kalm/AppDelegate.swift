@@ -8,6 +8,8 @@
 
 import UIKit
 import Intents
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var listStartSessionName = ["I feel stressed","I am stressed","Start my breath session","start breathing session","breath","session","start session"]
@@ -39,16 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+        
+        print(intent)
+        guard let intent = userActivity.interaction?.intent as? StartBreathingSessionIntent else {
             print("AppDelegate: Start Workout Intent - FALSE")
             return false
         }
+        
         print("AppDelegate: Start Workout Intent - TRUE")
-        print(intent)
-        guard let name = intent.workoutName?.spokenPhrase else {return false}
+        
+        guard let name = intent.name else {return false}
         
 //        for sessionName in listStartSessionName{
-            if name == "Start Session"{
+            if name == "Session"{
                 print("namanya bener")
                 var navigationController2 = window?.rootViewController as? UINavigationController
                 var workoutVC2 = navigationController2?.viewControllers

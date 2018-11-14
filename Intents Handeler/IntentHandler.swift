@@ -17,25 +17,16 @@ import Intents
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-class IntentHandler: INExtension, INStartWorkoutIntentHandling, INEndWorkoutIntentHandling{
-    func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-        print("start Workout Intent: ", intent)
-        print("intent handeler")
-        let userActivity: NSUserActivity? = nil
-        guard let SpokenPhrase = intent.workoutName?.spokenPhrase else {
-            completion(INStartWorkoutIntentResponse(code: .failureNoMatchingWorkout, userActivity: userActivity))
-            return
+class IntentHandler: INExtension{
+    
+    override func handler(for intent: INIntent) -> Any? {
+        guard intent is StartBreathingSessionIntent else{
+            fatalError("Unhandled intent type : \(intent)")
         }
-        print(SpokenPhrase)
-        completion(INStartWorkoutIntentResponse(code: .handleInApp, userActivity: userActivity))
+        
+        return StartBreathingSessionIntentHandler()
     }
     
-    func resolveWorkoutName(for intent: INEndWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
-        resolveWorkout
-    }
-    func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
-        
-    }
 }
 
 

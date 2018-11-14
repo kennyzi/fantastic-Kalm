@@ -26,10 +26,13 @@
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
 			<array/>
+			<key>IntentsRestrictedWhileProtectedDataUnavailable</key>
+			<array/>
 			<key>IntentsSupported</key>
 			<array>
-				<string>INStartWorkoutIntent</string>
 				<string>INEndWorkoutIntent</string>
+				<string>INStartWorkoutIntent</string>
+				<string>StartBreathingSessionIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
