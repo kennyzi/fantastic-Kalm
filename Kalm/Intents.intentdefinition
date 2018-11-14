@@ -22,7 +22,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>KpTYA0</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>4</integer>
+			<integer>13</integer>
 			<key>INIntentName</key>
 			<string>StartBreathingSession</string>
 			<key>INIntentParameterCombinations</key>
@@ -68,7 +68,7 @@
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>3</integer>
+					<integer>12</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
@@ -84,6 +84,18 @@
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>3</integer>
+					<key>INIntentParameterName</key>
+					<string>name</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>13</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
 			</array>
 			<key>INIntentResponse</key>
 			<dict>
@@ -91,7 +103,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string></string>
+						<string>Gagal anjeng</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>VYuQZX</string>
 						<key>INIntentResponseCodeName</key>
@@ -153,7 +165,7 @@
 			<key>INIntentRestrictions</key>
 			<integer>0</integer>
 			<key>INIntentTitle</key>
-			<string>Start Breathing Session</string>
+			<string>Start session</string>
 			<key>INIntentTitleID</key>
 			<string>Bxc7hE</string>
 			<key>INIntentType</key>

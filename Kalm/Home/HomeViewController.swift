@@ -154,7 +154,32 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             print(status)
         }
         INVocabulary.shared().setVocabularyStrings(["Breath","Start Session"], of: .workoutActivityName)
+        
+        donateIntent()
+        
         super.viewDidLoad()
+    }
+    
+    func donateIntent(){
+        let intent = StartBreathingSessionIntent()
+        
+        intent.suggestedInvocationPhrase = "Start session with Calm"
+        intent.inhale = NSNumber(integerLiteral: inhaleDuration)
+        intent.exhale = NSNumber(integerLiteral: exhaleDuration)
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { (error) in
+            if error != nil{
+                if let error = error as NSError?{
+                    print("Interaction Donation failed : \(error)")
+                }else{
+                    print("Success donated interaction")
+                }
+            }else{
+                print("Fail at donating process")
+            }
+        }
     }
     
     

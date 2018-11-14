@@ -13,18 +13,45 @@ final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSession
     func handle(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
         var inhale : Int?
         var exhale : Int?
+        var isSuccess = true
         
         if let unwrappedInhale = intent.inhale{
-            inhale = Int(unwrappedInhale)
+            inhale = Int(truncating: unwrappedInhale)
+            UserDefaults.standard.setValue(inhale, forKey: "inhaleDuration")
         }else{
-            inhale = UserDefaults.standard.value(forKey: "InhaleDuration")
+            isSuccess = false
+            if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
+                if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
+                    inhale = savedInhaleDuration
+                }
+            }
+        }
+        
+        if let unwrappedExhale = intent.exhale{
+            exhale = Int(truncating: unwrappedExhale)
+            UserDefaults.standard.setValue(exhale, forKey: "exhaleDuration")
+        }else{
+            isSuccess = false
+            if UserDefaults.standard.value(forKey: "exhaleDuration") != nil{
+                if let savedExhaleDuration = UserDefaults.standard.value(forKey: "exhaleDuration") as? Int{
+                    exhale = savedExhaleDuration
+                }
+            }
+        }
+        
+        intent.name = "Session"
+        
+        if isSuccess == true{
+            completion(StartBreathingSessionIntentResponse.successWithInhaleExhale(inhale: intent.inhale!, exhale: intent.exhale!))
+        }else{
+            completion(StartBreathingSessionIntentResponse(code: .success, userActivity: nil))
         }
     }
     
     //Start Session
     
     //    func confirm(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-    //        <#code#>
+    //
     //    }
     
 //    func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
@@ -44,4 +71,7 @@ final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSession
 //    func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
 //
 //    }
+    public func confirm(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
+        
+    }
 }

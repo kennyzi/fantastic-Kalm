@@ -8,6 +8,8 @@
 
 import UIKit
 import Intents
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var listStartSessionName = ["I feel stressed","I am stressed","Start my breath session","start breathing session","breath","session","start session"]
@@ -39,16 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+        
+        print(intent)
+        guard let intent = userActivity.interaction?.intent as? StartBreathingSessionIntent else {
             print("AppDelegate: Start Workout Intent - FALSE")
             return false
         }
-        print("AppDelegate: Start Workout Intent - TRUE")
-        print(intent)
-        guard let name = intent.workoutName?.spokenPhrase else {return false}
         
-        for sessionName in listStartSessionName{
-            if name.contains(sessionName){
+        print("AppDelegate: Start Workout Intent - TRUE")
+        
+        guard let name = intent.name else {return false}
+        
+//        for sessionName in listStartSessionName{
+            if name == "Session"{
                 print("namanya bener")
                 var navigationController2 = window?.rootViewController as? UINavigationController
                 var workoutVC2 = navigationController2?.viewControllers
@@ -77,8 +82,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }else{
                 return false
             }
-        }
-        return false
+//        }
+//        return false
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
