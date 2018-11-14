@@ -10,6 +10,12 @@ import Foundation
 
 final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSessionIntentHandling{
     
+    
+    func confirm(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
+        completion(StartBreathingSessionIntentResponse(code: .continueInApp, userActivity: nil))
+        print(intent)
+    }
+    
     func handle(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
         var inhale : Int?
         var exhale : Int?
@@ -42,7 +48,7 @@ final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSession
         intent.name = "Session"
         
         if isSuccess == true{
-            completion(StartBreathingSessionIntentResponse.successWithInhaleExhale(inhale: intent.inhale!, exhale: intent.exhale!))
+            completion(StartBreathingSessionIntentResponse(code: .successWithInhaleExhale, userActivity: nil))
         }else{
             completion(StartBreathingSessionIntentResponse(code: .success, userActivity: nil))
         }
@@ -71,7 +77,4 @@ final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSession
 //    func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
 //
 //    }
-    public func confirm(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
-        
-    }
 }

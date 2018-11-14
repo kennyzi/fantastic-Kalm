@@ -42,11 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         
-        print(intent)
         guard let intent = userActivity.interaction?.intent as? StartBreathingSessionIntent else {
             print("AppDelegate: Start Workout Intent - FALSE")
             return false
         }
+        print(intent)
         
         print("AppDelegate: Start Workout Intent - TRUE")
         

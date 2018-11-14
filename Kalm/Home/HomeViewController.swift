@@ -164,8 +164,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let intent = StartBreathingSessionIntent()
         
         intent.suggestedInvocationPhrase = "Start session with Calm"
-        intent.inhale = NSNumber(integerLiteral: inhaleDuration)
-        intent.exhale = NSNumber(integerLiteral: exhaleDuration)
+//        intent.inhale = NSNumber(integerLiteral: inhaleDuration)
+//        intent.exhale = NSNumber(integerLiteral: exhaleDuration)
         
         let interaction = INInteraction(intent: intent, response: nil)
         
@@ -177,7 +177,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                     print("Success donated interaction")
                 }
             }else{
-                print("Fail at donating process")
+                print(error)
+                print("gak ada error dul")
             }
         }
     }

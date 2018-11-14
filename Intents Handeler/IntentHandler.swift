@@ -18,6 +18,9 @@ import Intents
 // "Search for messages in <myApp>"
 
 class IntentHandler: INExtension{
+//    func handle(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
+//        print(intent)
+//    }
     
     override func handler(for intent: INIntent) -> Any? {
         guard intent is StartBreathingSessionIntent else{
