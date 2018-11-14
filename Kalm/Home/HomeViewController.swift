@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         //Get inhaleDuration & exhaleDuration
-        
+        super.viewDidLoad()
         if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
             if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
                 inhaleDuration = savedInhaleDuration
@@ -150,24 +150,34 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         exhaleDurationLabel.text = String(exhaleDuration) + " sec"
         
         //Request Siri Authorization
+        donateIntent()
         INPreferences.requestSiriAuthorization { (status) in
             print(status)
         }
-        INVocabulary.shared().setVocabularyStrings(["Breath","Start Session"], of: .workoutActivityName)
+//        INVocabulary.shared().setVocabularyStrings(["Breath","Start Session"], of: .workoutActivityName)
         
-        donateIntent()
         
-        super.viewDidLoad()
     }
     
     func donateIntent(){
+        print("Start donate")
+        
         let intent = StartBreathingSessionIntent()
+        
+        print("Set intent")
         
         intent.suggestedInvocationPhrase = "Start session with Calm"
 //        intent.inhale = NSNumber(integerLiteral: inhaleDuration)
 //        intent.exhale = NSNumber(integerLiteral: exhaleDuration)
         
+        intent.inhale = "A"
+        intent.exhale = "B"
+        
+        print("Set interaction")
+        
         let interaction = INInteraction(intent: intent, response: nil)
+        
+        print("mencoba donate")
         
         interaction.donate { (error) in
             if error != nil{

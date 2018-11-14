@@ -22,38 +22,23 @@
 			<key>INIntentDescriptionID</key>
 			<string>KpTYA0</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>13</integer>
+			<integer>15</integer>
 			<key>INIntentName</key>
 			<string>StartBreathingSession</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key></key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Starting your session</string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>QFl5Ad</string>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Start session with Calm</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>NUFfOV</string>
-				</dict>
 				<key>exhale,inhale</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Starting your session with ${inhale}seconds inhale and ${exhale}seconds exhale</string>
+					<string></string>
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>IWozg2</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Start session with ${inhale}seconds inhale and ${exhale}seconds exhale</string>
+					<string>Breath ${inhale} ${exhale} using calm</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>G96gwg</string>
 				</dict>
@@ -68,9 +53,9 @@
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>12</integer>
+					<integer>14</integer>
 					<key>INIntentParameterType</key>
-					<string>Integer</string>
+					<string>String</string>
 				</dict>
 				<dict>
 					<key>INIntentParameterDisplayPriority</key>
@@ -80,19 +65,7 @@
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>4</integer>
-					<key>INIntentParameterType</key>
-					<string>Integer</string>
-				</dict>
-				<dict>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>3</integer>
-					<key>INIntentParameterName</key>
-					<string>name</string>
-					<key>INIntentParameterSupportsMultipleValues</key>
-					<false/>
-					<key>INIntentParameterTag</key>
-					<integer>13</integer>
+					<integer>15</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
 				</dict>

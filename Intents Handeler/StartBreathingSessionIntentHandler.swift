@@ -17,35 +17,34 @@ final class StartBreathingSessionIntentHandler : NSObject, StartBreathingSession
     }
     
     func handle(intent: StartBreathingSessionIntent, completion: @escaping (StartBreathingSessionIntentResponse) -> Void) {
+        print(intent)
         var inhale : Int?
         var exhale : Int?
         var isSuccess = true
         
-        if let unwrappedInhale = intent.inhale{
-            inhale = Int(truncating: unwrappedInhale)
-            UserDefaults.standard.setValue(inhale, forKey: "inhaleDuration")
-        }else{
-            isSuccess = false
-            if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
-                if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
-                    inhale = savedInhaleDuration
-                }
-            }
-        }
-        
-        if let unwrappedExhale = intent.exhale{
-            exhale = Int(truncating: unwrappedExhale)
-            UserDefaults.standard.setValue(exhale, forKey: "exhaleDuration")
-        }else{
-            isSuccess = false
-            if UserDefaults.standard.value(forKey: "exhaleDuration") != nil{
-                if let savedExhaleDuration = UserDefaults.standard.value(forKey: "exhaleDuration") as? Int{
-                    exhale = savedExhaleDuration
-                }
-            }
-        }
-        
-        intent.name = "Session"
+//        if let unwrappedInhale = intent.inhale{
+//            inhale = Int(truncating: unwrappedInhale)
+//            UserDefaults.standard.setValue(inhale, forKey: "inhaleDuration")
+//        }else{
+//            isSuccess = false
+//            if UserDefaults.standard.value(forKey: "inhaleDuration") != nil{
+//                if let savedInhaleDuration = UserDefaults.standard.value(forKey: "inhaleDuration") as? Int{
+//                    inhale = savedInhaleDuration
+//                }
+//            }
+//        }
+//        
+//        if let unwrappedExhale = intent.exhale{
+//            exhale = Int(truncating: unwrappedExhale)
+//            UserDefaults.standard.setValue(exhale, forKey: "exhaleDuration")
+//        }else{
+//            isSuccess = false
+//            if UserDefaults.standard.value(forKey: "exhaleDuration") != nil{
+//                if let savedExhaleDuration = UserDefaults.standard.value(forKey: "exhaleDuration") as? Int{
+//                    exhale = savedExhaleDuration
+//                }
+//            }
+//        }
         
         if isSuccess == true{
             completion(StartBreathingSessionIntentResponse(code: .successWithInhaleExhale, userActivity: nil))

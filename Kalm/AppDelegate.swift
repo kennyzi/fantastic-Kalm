@@ -50,10 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("AppDelegate: Start Workout Intent - TRUE")
         
-        guard let name = intent.name else {return false}
+//        guard let name = intent.name else {return false}
         
 //        for sessionName in listStartSessionName{
-            if name == "Session"{
+            if intent != nil{
                 print("namanya bener")
                 var navigationController2 = window?.rootViewController as? UINavigationController
                 var workoutVC2 = navigationController2?.viewControllers
